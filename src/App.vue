@@ -1,47 +1,33 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+<script setup lang="ts">
+import Navbar from "./components/Navbar.vue";
+import Hero from "./components/Hero.vue";
+import Benefits from "./components/Benefits.vue";
+import Features from "./components/Features.vue";
+import Services from "./components/Services.vue";
+import HowItWorks from "./components/HowItWorks.vue";
+import Sponsors from "./components/Sponsors.vue";
+import Testimonials from "./components/Testimonials.vue";
+import Team from "./components/Team.vue";
+import Pricing from "./components/Pricing.vue";
+import Community from "./components/Community.vue";
+import Contact from "./components/Contact.vue";
+import FAQ from "./components/FAQ.vue";
+import Footer from "./components/Footer.vue";
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+  <Navbar />
+  <Hero />
+  <Sponsors />
+  <Benefits />
+  <Features />
+  <Services />
+  <HowItWorks />
+  <Testimonials />
+  <Team />
+  <Community />
+  <Pricing />
+  <Contact />
+  <FAQ />
+  <Footer />
 </template>
-
-<style scoped>
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
-</style>

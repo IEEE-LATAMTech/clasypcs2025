@@ -1,29 +1,57 @@
-# CLASYPCS 2025 - Website
+# Shadcn/Vue Landing Page Template
 
-This template should help get you started developing with Vue 3 in Vite.
+## <a href="https://www.shadcn-vue.com/" target="_blank">Shadcn-Vue</a> + <a href="https://vuejs.org/" target="_blank">Vue.js</a> + <a href="https://www.typescriptlang.org/" target="_blank">TypeScript</a> + <a href="https://tailwindcss.com/" target="_blank">Tailwind</a>.
 
-## Recommended IDE Setup
+![Alt text](./public/demo-img.jpg)
+Live demo is now available: <a href="https://shadcn-vue-landing-page.vercel.app" target="_blank">Live Demo</a>
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Sections
 
-## Customize configuration
+- [x] Navbar
+- [x] Sidebar(mobile)
+- [x] Hero
+- [x] Sponsors
+- [x] Benefits
+- [x] Features
+- [x] Services
+- [x] HowItWorks
+- [x] Testimonials
+- [x] Pricing
+- [x] Frequently Asked Questions(FAQ)
+- [x] Team
+- [x] Community
+- [x] Contact
+- [x] Footer
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## Features
 
-## Project Setup
+- [x] Fully Responsive Design
+- [x] User Friendly Navigation
+- [x] Dark Mode
+- [x] Meta tags
 
-```sh
+## How to install
+
+1. Clone this repositoy:
+
+```bash
+git clone https://github.com/leoMirandaa/shadcn-vue-landing-page.git
+```
+
+2. Go into project
+
+```bash
+cd shadcn-vue-landing-page
+```
+
+3. Install dependencies
+
+```bash
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+4. Run project
 
-```sh
+```bash
 npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
 ```
