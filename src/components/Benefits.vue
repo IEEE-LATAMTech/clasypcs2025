@@ -19,27 +19,27 @@ interface BenefitsProps {
 const benefitList: BenefitsProps[] = [
   {
     icon: "blocks",
-    title: "Build Brand Trust",
+    title: "International collaboration",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores.",
+      "Join interactive workshops with people from around the globe. Share ideas, work on cross-cultural projects, and broaden your professional horizons.",
   },
   {
     icon: "lineChart",
-    title: "More Leads",
+    title: "Authentic leadership",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, natus consectetur.",
+      "Inspiring talks on how to lead with purpose. Learn to make impactful decisions, motivate others, and become a positive influence in your environment..",
   },
   {
     icon: "wallet",
-    title: "Higher Conversions",
+    title: "Personal growth & professional branding",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus consectetur. A odio velit cum aliquam",
+      "Learn how to bring out the best version of yourself. From digital presence to interpersonal skills, build a personal brand that opens doors.",
   },
   {
     icon: "sparkle",
-    title: "Test Marketing Ideas",
+    title: " Networking & new opportunities",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores.",
+      "Expand your network. Meet like-minded individuals, mentors, and companies looking for talent just like yours.",
   },
 ];
 
@@ -71,12 +71,12 @@ const iconMap: Record<
         <h2 class="text-lg text-primary mb-2 tracking-wider">Benefits</h2>
 
         <h2 class="text-3xl md:text-4xl font-bold mb-4">
-          Your Shortcut to Success
+          Your springboard to the future
         </h2>
         <p class="text-xl text-muted-foreground mb-8">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non ducimus
-          reprehenderit architecto rerum similique facere odit deleniti
-          necessitatibus quo quae.
+          Are you a university student or a young professional? This event is designed to boost your potential. 
+          Discover powerful tools, connect with leaders, and get ready to stand out in an increasingly
+           competitive world.
         </p>
       </div>
 

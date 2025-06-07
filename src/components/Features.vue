@@ -21,39 +21,39 @@ interface FeaturesProps {
 const featureList: FeaturesProps[] = [
   {
     icon: "tabletSmartphone",
-    title: "Mobile Friendly",
+    title: "Global Perspective",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, consectetur.",
+      "Participate in workshops with students and professionals from all over the world. Collaborate on ideas that transcend borders.",
   },
   {
     icon: "badgeCheck",
-    title: "Social Proof",
+    title: "Future-Ready Skills",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Natus consectetur, odio ea accusamus aperiam.",
+      "Master soft skills that matter: communication, leadership, adaptability, and personal branding — essential for tomorrow's workforce.",
   },
   {
     icon: "goal",
-    title: "Targeted Content",
+    title: " Inspiring Speakers",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. odio ea accusamus aperiam.",
+      "Learn directly from leaders, innovators, and changemakers who are shaping industries and communities worldwide.",
   },
   {
     icon: "pictureInPicture",
-    title: "Strong Visuals",
+    title: "Real Networking",
     description:
-      "Lorem elit. A odio velit cum aliquam. Natus consectetur dolores, odio ea accusamus aperiam.",
+      "Meet peers, mentors, and recruiters in dynamic networking spaces. Build meaningful connections for life and career.",
   },
   {
     icon: "mousePointerClick",
-    title: "Clear CTA",
+    title: "Purpose-Driven Content",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing. odio ea accusamus consectetur.",
+      "Every session is designed to equip you with actionable insights — no fluff, just real value tailored to your growth.",
   },
   {
     icon: "newspaper",
-    title: "Clear Headline",
+    title: "Personalized Experience",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur.",
+      "Choose your track. Customize your schedule. This isn’t a one-size-fits-all event — it’s your journey, your way.",
   },
 ];
 
@@ -93,9 +93,10 @@ const iconMap: Record<
     </h2>
 
     <h3 class="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem
-      fugiat, odit similique quasi sint reiciendis quidem iure veritatis optio
-      facere tenetur.
+      We’re not just another event — we’re a launchpad for your global potential. 
+      Designed to challenge, connect, and inspire, this is where bold ideas meet real-world impact.
+
+
     </h3>
 
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">

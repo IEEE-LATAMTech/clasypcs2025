@@ -93,7 +93,7 @@ const isOpen = ref<boolean>(false);
       <ChevronsDown
         class="bg-gradient-to-tr from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-white"
       />
-      ShadcnVue</a
+      CLASYPCS 2025</a
     >
     <!-- Mobile -->
     <div class="flex items-center lg:hidden">
@@ -119,7 +119,7 @@ const isOpen = ref<boolean>(false);
                   <ChevronsDown
                     class="bg-gradient-to-tr from-primary/70 via-primary to-primary/70 rounded-lg size-9 mr-2 border text-white"
                   />
-                  ShadcnVue
+                  CLASYPCS 2025
                 </a>
               </SheetTitle>
             </SheetHeader>
@@ -204,20 +204,20 @@ const isOpen = ref<boolean>(false);
     <div class="hidden lg:flex">
       <ToggleTheme />
 
-      <Button
+      <!-- <Button
         as-child
         size="sm"
         variant="ghost"
         aria-label="View on GitHub"
-      >
-        <a
+      > -->
+        <!-- <a
           aria-label="View on GitHub"
           href="https://github.com/leoMirandaa/shadcn-vue-landing-page.git"
           target="_blank"
-        >
-          <GithubIcon class="size-5" />
-        </a>
-      </Button>
+        > -->
+          <!-- <GithubIcon class="size-5" />
+        </a> -->
+      <!-- </Button> -->
     </div>
   </header>
 </template>
