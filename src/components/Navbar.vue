@@ -90,11 +90,12 @@ const isOpen = ref<boolean>(false);
       href="/"
       class="font-bold text-lg flex items-center"
     >
-    <!-- encontrar el fondito ese como naranja que tiene la imagen -->
+    <!--class="bg-gradient-to-tr from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border object-cover" -->
+    <!-- esa madre de arriba le da el color ese naranja como de fondo a la imagen -->
        <img
     src="../assets/favicon.png"
     alt="CLASYPCS 2025 Logo"
-    class="bg-gradient-to-tr from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border object-cover"
+    class=" rounded-lg w-9 h-9 mr-2 border object-cover"
   />
       CLASYPCS 2025</a
     >
