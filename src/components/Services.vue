@@ -21,26 +21,26 @@ interface ServiceProps {
 
 const serviceList: ServiceProps[] = [
   {
-    title: "Custom Domain Integration",
+    title: " Hotel Accommodation Included",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit adipisicing.",
+      "Stay at a comfortable, high-quality hotel just minutes away from the venue. Connect with fellow attendees and make the most of every moment.",
     pro: 0,
   },
   {
-    title: "Social Media Integrations",
+    title: " Professional Event Venue",
     description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, dicta.",
+      "All sessions and activities will be held in a fully equipped event hall, ideal for workshops, talks, and networking opportunities.",
     pro: 0,
   },
   {
-    title: "Email Marketing Integrations",
-    description: "Lorem dolor sit amet adipisicing.",
+    title: "Included Transportation",
+    description: "Worry-free travel between the hotel and event venue is included, so you can focus on learning and connecting.",
     pro: 0,
   },
   {
-    title: "SEO Optimization",
-    description: "Lorem ipsum dolor sit amet consectetur.",
-    pro: 1,
+    title: "City Vibes",
+    description: "Take time to explore the local culture, food, and urban life — all just steps away from your accommodation.",
+    pro: 0 ,
   },
 ];
 </script>
@@ -51,15 +51,15 @@ const serviceList: ServiceProps[] = [
     class="container py-24 sm:py-32"
   >
     <h2 class="text-lg text-primary text-center mb-2 tracking-wider">
-      Services
+      Ubication
     </h2>
 
     <h2 class="text-3xl md:text-4xl text-center font-bold mb-4">
-      Grow Your Business
-    </h2>
+      Where the Experience Happens    </h2>
     <h3 class="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
-      From marketing and sales to operations and strategy, we have the expertise
-      to help you achieve your goals.
+      Enjoy the perfect balance of comfort and professionalism. Our event takes place in a modern
+       conference center within a premium hotel,offering everything you need to stay focused,
+        connected, and inspired.
     </h3>
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
 

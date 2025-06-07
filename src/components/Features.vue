@@ -4,12 +4,12 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   Paintbrush,
   MessageCircle,
-  TabletSmartphone,
-  BadgeCheck,
-  Goal,
-  PictureInPicture,
-  MousePointerClick,
-  Newspaper,
+  Globe,
+  Brain,
+  Ear,
+  Handshake,
+  Target,
+  Palette,
 } from "lucide-vue-next";
 
 interface FeaturesProps {
@@ -20,37 +20,37 @@ interface FeaturesProps {
 
 const featureList: FeaturesProps[] = [
   {
-    icon: "tabletSmartphone",
+    icon: "globe",
     title: "Global Perspective",
     description:
       "Participate in workshops with students and professionals from all over the world. Collaborate on ideas that transcend borders.",
   },
   {
-    icon: "badgeCheck",
+    icon: "brain",
     title: "Future-Ready Skills",
     description:
       "Master soft skills that matter: communication, leadership, adaptability, and personal branding — essential for tomorrow's workforce.",
   },
   {
-    icon: "goal",
+    icon: "ear",
     title: " Inspiring Speakers",
     description:
       "Learn directly from leaders, innovators, and changemakers who are shaping industries and communities worldwide.",
   },
   {
-    icon: "pictureInPicture",
+    icon: "handshake",
     title: "Real Networking",
     description:
       "Meet peers, mentors, and recruiters in dynamic networking spaces. Build meaningful connections for life and career.",
   },
   {
-    icon: "mousePointerClick",
+    icon: "target",
     title: "Purpose-Driven Content",
     description:
       "Every session is designed to equip you with actionable insights — no fluff, just real value tailored to your growth.",
   },
   {
-    icon: "newspaper",
+    icon: "palette",
     title: "Personalized Experience",
     description:
       "Choose your track. Customize your schedule. This isn’t a one-size-fits-all event — it’s your journey, your way.",
@@ -59,23 +59,23 @@ const featureList: FeaturesProps[] = [
 
 const iconMap: Record<
   string,
-  | typeof TabletSmartphone
-  | typeof BadgeCheck
-  | typeof Goal
-  | typeof PictureInPicture
+  | typeof Globe
+  | typeof Brain
+  | typeof Ear
+  | typeof Handshake
   | typeof Paintbrush
-  | typeof MousePointerClick
+  | typeof target
   | typeof MessageCircle
-  | typeof Newspaper
+  | typeof Palette
 > = {
-  tabletSmartphone: TabletSmartphone,
-  badgeCheck: BadgeCheck,
-  goal: Goal,
-  pictureInPicture: PictureInPicture,
+  globe: Globe,
+  brain: Brain,
+  ear: Ear,
+  handshake: Handshake,
   paintbrush: Paintbrush,
-  mousePointerClick: MousePointerClick,
+  target: Target,
   messageCircle: MessageCircle,
-  newspaper: Newspaper,
+  palette: Palette,
 };
 </script>
 

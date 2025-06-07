@@ -2,12 +2,12 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 import {
-  Sparkle,
+  Contact,
   Tag,
   Paintbrush,
-  Blocks,
-  LineChart,
-  Wallet,
+  Earth,
+  Rocket,
+  Shrub,
 } from "lucide-vue-next";
 
 interface BenefitsProps {
@@ -18,25 +18,25 @@ interface BenefitsProps {
 
 const benefitList: BenefitsProps[] = [
   {
-    icon: "blocks",
+    icon: "earth",
     title: "International collaboration",
     description:
       "Join interactive workshops with people from around the globe. Share ideas, work on cross-cultural projects, and broaden your professional horizons.",
   },
   {
-    icon: "lineChart",
+    icon: "rocket",
     title: "Authentic leadership",
     description:
       "Inspiring talks on how to lead with purpose. Learn to make impactful decisions, motivate others, and become a positive influence in your environment..",
   },
   {
-    icon: "wallet",
+    icon: "shrub",
     title: "Personal growth & professional branding",
     description:
       "Learn how to bring out the best version of yourself. From digital presence to interpersonal skills, build a personal brand that opens doors.",
   },
   {
-    icon: "sparkle",
+    icon: "contact",
     title: " Networking & new opportunities",
     description:
       "Expand your network. Meet like-minded individuals, mentors, and companies looking for talent just like yours.",
@@ -45,19 +45,19 @@ const benefitList: BenefitsProps[] = [
 
 const iconMap: Record<
   string,
-  | typeof Sparkle
+  | typeof Contact
   | typeof Tag
   | typeof Paintbrush
-  | typeof Blocks
-  | typeof LineChart
-  | typeof Wallet
+  | typeof Earth
+  | typeof Rocket
+  | typeof Shrub
 > = {
-  sparkle: Sparkle,
+  contact: Contact,
   tag: Tag,
   paintbrush: Paintbrush,
-  blocks: Blocks,
-  lineChart: LineChart,
-  wallet: Wallet,
+  earth: Earth,
+  rocket: Rocket,
+  shrub: Shrub,
 };
 </script>
 
