@@ -21,24 +21,24 @@ interface ServiceProps {
 
 const serviceList: ServiceProps[] = [
   {
-    title: " Hotel Accommodation Included",
+    title: "🏨 Hotel Accommodation Included",
     description:
       "Stay at a comfortable, high-quality hotel just minutes away from the venue. Connect with fellow attendees and make the most of every moment.",
     pro: 0,
   },
   {
-    title: " Professional Event Venue",
+    title: "🏛️ Professional Event Venue",
     description:
       "All sessions and activities will be held in a fully equipped event hall, ideal for workshops, talks, and networking opportunities.",
     pro: 0,
   },
   {
-    title: "Included Transportation",
+    title: "🚌 Included Transportation",
     description: "Worry-free travel between the hotel and event venue is included, so you can focus on learning and connecting.",
     pro: 0,
   },
   {
-    title: "City Vibes",
+    title: "🌆 City Vibes",
     description: "Take time to explore the local culture, food, and urban life — all just steps away from your accommodation.",
     pro: 0 ,
   },

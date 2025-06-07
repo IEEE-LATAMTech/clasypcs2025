@@ -90,9 +90,12 @@ const isOpen = ref<boolean>(false);
       href="/"
       class="font-bold text-lg flex items-center"
     >
-      <ChevronsDown
-        class="bg-gradient-to-tr from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-white"
-      />
+    <!-- encontrar el fondito ese como naranja que tiene la imagen -->
+       <img
+    src="../assets/favicon.png"
+    alt="CLASYPCS 2025 Logo"
+    class="bg-gradient-to-tr from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border object-cover"
+  />
       CLASYPCS 2025</a
     >
     <!-- Mobile -->

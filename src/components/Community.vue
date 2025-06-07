@@ -9,7 +9,7 @@ import {
 
 import { Button } from "@/components/ui/button";
 
-import DiscordIcon from "@/icons/DiscordIcon.vue";
+import { Instagram } from "lucide-vue-next";//// icon insta
 </script>
 
 <template>
@@ -25,9 +25,8 @@ import DiscordIcon from "@/icons/DiscordIcon.vue";
         >
           <CardHeader>
             <CardTitle class="text-4xl md:text-5xl font-bold">
-              <Component
+              <Instagram 
                 class="w-20 h-20 m-auto mb-4"
-                :is="DiscordIcon"
               />
               Ready to join this
               <span
@@ -38,17 +37,17 @@ import DiscordIcon from "@/icons/DiscordIcon.vue";
             </CardTitle>
           </CardHeader>
           <CardContent class="lg:w-[80%] text-xl text-muted-foreground">
-            Join our vibrant Discord community! Connect, share, and grow with
-            like-minded enthusiasts. Click to dive in! 🚀
+            Join our vibrant Instagram community! Connect, share, and grow with
+            like-minded enthusiasts. Click to dive in! ✨
           </CardContent>
 
           <CardFooter>
             <Button as-child>
               <a
-                href="https://discord.com/"
+                href="https://www.instagram.com/ieeeclasypcs?igsh=NDVhcjdmZ3p5ZWR6"
                 target="_blank"
               >
-                Join Discord
+                Join Instagram
               </a>
             </Button>
           </CardFooter>

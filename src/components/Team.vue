@@ -26,19 +26,19 @@ interface SocialNetworkProps {
 
 const teamList: TeamProps[] = [
   {
-    imageUrl: "https://i.pravatar.cc/250?img=58",
-    firstName: "Leo",
-    lastName: "Miranda",
-    positions: ["Vue Fronted Developer", "Creator Of This Website"],
+    imageUrl: "/imagenesTeam/chris.jpg",
+    firstName: "Christian",
+    lastName: "Rojas Anaya",
+    positions: ["General Chair", "Junior Penetration Tester"],
     socialNetworks: [
       {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
+        url: "https://www.linkedin.com/in/christian-rojas-anaya-a5183928a/",
       },
-      {
-        name: "Github",
-        url: "https://github.com/leoMirandaa",
-      },
+      // {
+      //   name: "Github",
+      //   url: "https://github.com/leoMirandaa",
+      // },
       {
         name: "X",
         url: "https://x.com/leo_mirand4",
@@ -48,13 +48,13 @@ const teamList: TeamProps[] = [
   {
     imageUrl:
       "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    firstName: "Elizabeth",
-    lastName: "Moore",
-    positions: ["UI/UX Designer"],
+    firstName: "Waldir",
+    lastName: "Ventura Filho",
+    positions: ["Finance Committe", "Financial Planning Specialist"],
     socialNetworks: [
       {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
+        url: "https://www.linkedin.com/in/waldir-ventura-filho/",
       },
       {
         name: "X",
@@ -65,13 +65,13 @@ const teamList: TeamProps[] = [
   {
     imageUrl:
       "https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=1760&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    firstName: "David",
-    lastName: "Diaz",
-    positions: ["Machine Learning Engineer", "TensorFlow Tinkerer"],
+    firstName: "Karen",
+    lastName: "Dayana Tovar",
+    positions: ["Program Co-Chair", "Machine Learning Scientist"],
     socialNetworks: [
       {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
+        url: "https://www.linkedin.com/in/karen-tovar-parra/",
       },
       {
         name: "Github",
