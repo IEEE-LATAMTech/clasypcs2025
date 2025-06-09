@@ -22,7 +22,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "node scripts/gh-pages-deploy.js"
   },
   "dependencies": {
     "@selemondev/vue3-marquee": "^0.0.8",
@@ -47,6 +48,7 @@
     "tailwindcss": "^3.4.4",
     "typescript": "^5.4.5",
     "vite": "^5.3.1",
-    "vue-tsc": "^2.0.21"
+    "vue-tsc": "^2.0.21",
+    "execa": "^9.5.3"
   }
 }
