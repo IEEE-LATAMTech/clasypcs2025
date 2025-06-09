@@ -68,13 +68,11 @@ import { ArrowRight } from "lucide-vue-next";
           class="absolute -top-6 right-12 w-[90%] h-12 lg:h-[80%] bg-primary/50 blur-3xl rounded-full img-shadow-animation"
         ></div>
 
-        <!-- <img
-          class="w-full md:w-[1200px] mx-auto rounded-lg relative rouded-lg leading-none flex items-center border border-t-2 border-t-primary/30 img-border-animation"
-          :src="
-            mode == 'light' ? 'hero-image-light.jpg' : 'hero-image-dark.jpg'
-          "
-          alt="dashboard using shadcn-vue"
-        /> -->
+       <img
+        class="w-3/4 md:w-1/2 lg:w-2/5 xl:w-1/3 mx-auto rounded-lg relative leading-none flex items-center border border-t-2 border-t-primary/30 img-border-animation"
+            :src="mode == 'light' ? 'Bodoque07.svg ' : 'Bodoque04.svg'"
+            alt="dashboard using shadcn-vue"
+          />
 
         <!-- gradient effect img -->
         <div
