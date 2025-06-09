@@ -17,24 +17,25 @@ import Separator from "./ui/separator/Separator.vue";
             href="#"
             class="flex font-bold items-center"
           >
-            <ChevronsDown
+          
+            <!-- <ChevronsDown
               class="bg-gradient-to-tr from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-white"
-            />
+            /> -->
 
-            <h3 class="text-2xl">Shadcn-Vue</h3>
+            <h3 class="text-2xl">CLASYPCS2025</h3>
           </a>
         </div>
 
         <div class="flex flex-col gap-2">
           <h3 class="font-bold text-lg">Contact</h3>
-          <div>
+          <!-- <div>
             <a
               href="#"
               class="opacity-60 hover:opacity-100"
             >
               Github
             </a>
-          </div>
+          </div> -->
 
           <div>
             <a
@@ -148,8 +149,8 @@ import Separator from "./ui/separator/Separator.vue";
 
       <Separator class="my-6" />
       <section className="">
-        <h3 class="">
-          &copy; 2024 Designed and developed by
+        <!-- <h3 class="">
+          &copy;  CLASYPCS 2025
           <a
             target="_blank"
             href="https://github.com/leoMirandaa"
@@ -157,7 +158,7 @@ import Separator from "./ui/separator/Separator.vue";
           >
             Leo Miranda
           </a>
-        </h3>
+        </h3> -->
       </section>
     </div>
   </footer>

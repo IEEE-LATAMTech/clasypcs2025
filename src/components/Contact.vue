@@ -531,7 +531,7 @@ const countryCodes = [
         <span class="font-semibold">Have questions?</span>
       </div>
       <p class="text-muted-foreground">
-        Contact us at: <a href="mailto:clasypcs2025@gmail.com" class="text-primary underline">clasypcs2025@gmail.com</a>
+        Contact us at: <a href="mailto:clasypcs2025@gmail.com" class="text-primary underline">r9-syp@computer.org</a>
       </p>
     </div>
   </section>

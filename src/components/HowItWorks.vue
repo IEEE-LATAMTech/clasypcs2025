@@ -12,31 +12,31 @@ interface HowItWorksProps {
 const HowItWorksList: HowItWorksProps[] = [
   {
     badgeTitle: "Contribute",
-    title: "Make a Difference with Every Contribution",
+    title: "Bring Your Voice to the Global Conversation",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem fugiat, quasi sint reiciendis quidem iure.",
-    image: "roboto.png",
+      "Take part in dynamic discussions and workshops where your ideas matter. Share your perspective and contribute to building solutions with impact.",
+    image: "Bodoque.svg",
   },
   {
     badgeTitle: "Discover",
-    title: "Create an Impact with Every Choice",
+    title: "Unlock Your Potential Through New Experiences",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem fugiat, sint reiciendis quidem iure veritatis optio facere tenetur.",
-    image: "runner.png",
+      "From leadership insights to cultural exchange, every session is designed to expand your mindset and reveal new possibilities for your personal and professional growth.",
+    image: "Bodoque02.svg",
   },
   {
     badgeTitle: "Innovate",
-    title: "Make Every Action Count",
+    title: "Turn Ideas Into Action",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem fugiat, odit similique quasi sint.",
-    image: "pacheco.png",
+      "Challenge yourself to think creatively, solve real-world problems, and co-create with peers from around the world. This is where innovation starts.",
+    image: "Bodoque05.svg",
   },
   {
     badgeTitle: "Collaborate",
-    title: "Tackle this challenge together",
+    title: "Grow Together, Go Further",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem fugiat, quasi sint reiciendis quidem iure.",
-    image: "gamestation.png",
+      "Build lasting connections and learn the power of teamwork. This journey is about shared success — because great things happen when we work together.",
+    image: "Bodoque08.svg",
   },
 ];
 </script>
@@ -52,7 +52,7 @@ const HowItWorksList: HowItWorksProps[] = [
       </h2>
 
       <h2 class="text-3xl md:text-4xl text-center font-bold">
-        Step-by-Step Process
+        Step-by-Step Journey to Growth
       </h2>
     </div>
 

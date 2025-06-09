@@ -21,13 +21,14 @@ import Footer from "./components/Footer.vue";
   <Benefits />
   <Sponsors />
   <Features />
+  <Community />
   <Services />
   <HowItWorks />
-  <Testimonials />
-  <Team />
-  <Community />
-  <Pricing />
+  <!-- <Pricing /> -->
   <Contact />
+  
+  <Team />
+  <!-- <Testimonials /> -->
   <FAQ />
   <Footer />
 </template>

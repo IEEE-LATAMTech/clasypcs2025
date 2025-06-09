@@ -91,7 +91,7 @@ const reviewList: ReviewProps[] = [
       </h2>
 
       <h2 class="text-3xl md:text-4xl text-center font-bold mb-4">
-        Hear What Our 1000+ Clients Say
+        Hear What Our 100+ Assistans Say
       </h2>
     </div>
 

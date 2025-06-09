@@ -189,7 +189,7 @@ const socialIcon = (socialName: string) => {
       <h2 class="text-lg text-primary text-center mb-2 tracking-wider">Team</h2>
 
       <h2 class="text-3xl md:text-4xl text-center font-bold">
-        The Company Dream Team
+        The CLASYPCS 2025 Team
       </h2>
     </div>
 
