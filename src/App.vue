@@ -24,11 +24,9 @@ import Footer from "./components/Footer.vue";
   <Community />
   <Services />
   <HowItWorks />
-  <!-- <Pricing /> -->
   <Contact />
   
   <Team />
-  <!-- <Testimonials /> -->
   <FAQ />
   <Footer />
 </template>

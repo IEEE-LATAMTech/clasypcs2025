@@ -64,7 +64,7 @@ const iconMap: Record<
   | typeof Ear
   | typeof Handshake
   | typeof Paintbrush
-  | typeof target
+  | typeof Target
   | typeof MessageCircle
   | typeof Palette
 > = {
