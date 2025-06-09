@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import { ref, reactive } from "vue";
+import emailjs from '@emailjs/browser';
 import { Button } from "./ui/button";
-import { Card, CardContent } from "./ui/card";
+import { Card, CardContent} from "./ui/card";
 import { Label } from "./ui/label";
 import { Input } from "./ui/input";
 import {
@@ -53,9 +54,8 @@ interface RegistrationFormProps {
   allergies: string;
   dietaryRestrictions: string;
   
-  // Payment Method and Terms
+  // Payment Method
   paymentMethod: string;
-  agreeToTerms: boolean;
 }
 
 const registrationForm = reactive<RegistrationFormProps>({
@@ -86,61 +86,115 @@ const registrationForm = reactive<RegistrationFormProps>({
   allergies: "",
   dietaryRestrictions: "",
   
-  // Payment Method and Terms
+  // Payment Method
   paymentMethod: "Credit Card",
-  agreeToTerms: false,
 });
 
 const invalidInputForm = ref<boolean>(false);
+const isSubmitting = ref<boolean>(false);
+const submitSuccess = ref<boolean>(false);
 
-const handleSubmit = () => {
-  // Validate terms acceptance
-  if (!registrationForm.agreeToTerms) {
-    invalidInputForm.value = true;
-    return;
-  }
-  
+// EmailJS Configuration - Replace with your actual values
+const EMAILJS_SERVICE_ID = 'service_e9x87vp';
+const EMAILJS_TEMPLATE_ID = 'template_m25v52h';
+const EMAILJS_PUBLIC_KEY = '7PgYcd9fDVBNItAkJ';
+const handleSubmit = async () => {
   invalidInputForm.value = false;
-  console.log(registrationForm);
+  isSubmitting.value = true;
 
-  // Create email content
-  const emailBody = `
-CLASYPCS 2025 - REGISTRATION
+  try {
+    // Prepare template parameters for EmailJS
+    const templateParams = {
+      to_email: 'dan_mex22@ieee.org', // Replace with your email
+      from_name: registrationForm.fullName,
+      from_email: registrationForm.email,
+      subject: `CLASYPCS 2025 Registration - ${registrationForm.fullName}`,
+      
+      // Personal Information
+      full_name: registrationForm.fullName,
+      email: registrationForm.email,
+      phone: `${registrationForm.phoneCountryCode} ${registrationForm.phoneNumber}`,
+      country: registrationForm.countryOfOrigin,
+      identification_type: registrationForm.identificationType,
+      identification_number: registrationForm.identificationNumber,
+      
+      // Academic Information
+      university: registrationForm.universityName,
+      academic_status: registrationForm.studentOrProfessional,
+      graduation_date: registrationForm.graduationDate,
+      shirt_size: registrationForm.shirtSize,
+      
+      // IEEE Information
+      membership_number: registrationForm.membershipNumber || 'Not provided',
+      ieee_section: registrationForm.ieeeSection || 'Not provided',
+      registration_category: registrationForm.registrationCategory,
+      
+      // Medical & Emergency Contact
+      emergency_contact_name: registrationForm.emergencyContactName,
+      emergency_contact_phone: registrationForm.emergencyContactPhone,
+      medical_condition: registrationForm.medicalCondition || 'None',
+      allergies: registrationForm.allergies || 'None',
+      dietary_restrictions: registrationForm.dietaryRestrictions || 'None',
+      
+      // Payment
+      payment_method: registrationForm.paymentMethod,
+      
+      // Message with all information formatted
+      message: `
+=== CLASYPCS 2025 REGISTRATION ===
 
-=== PERSONAL INFORMATION ===
-Full Name: ${registrationForm.fullName}
-Email: ${registrationForm.email}
-Phone: ${registrationForm.phoneCountryCode} ${registrationForm.phoneNumber}
-Country of Origin: ${registrationForm.countryOfOrigin}
-${registrationForm.identificationType}: ${registrationForm.identificationNumber}
+PERSONAL INFORMATION:
+• Full Name: ${registrationForm.fullName}
+• Email: ${registrationForm.email}
+• Phone: ${registrationForm.phoneCountryCode} ${registrationForm.phoneNumber}
+• Country: ${registrationForm.countryOfOrigin}
+• ${registrationForm.identificationType}: ${registrationForm.identificationNumber}
 
-=== ACADEMIC INFORMATION ===
-University: ${registrationForm.universityName}
-Status: ${registrationForm.studentOrProfessional}
-Graduation: ${registrationForm.graduationDate}
-Shirt Size: ${registrationForm.shirtSize}
+ACADEMIC INFORMATION:
+• University: ${registrationForm.universityName}
+• Status: ${registrationForm.studentOrProfessional}
+• Graduation: ${registrationForm.graduationDate}
+• Shirt Size: ${registrationForm.shirtSize}
 
-=== IEEE INFORMATION ===
-Membership Number: ${registrationForm.membershipNumber}
-IEEE Section: ${registrationForm.ieeeSection}
-Registration Category: ${registrationForm.registrationCategory}
+IEEE INFORMATION:
+• Membership Number: ${registrationForm.membershipNumber || 'Not provided'}
+• Section: ${registrationForm.ieeeSection || 'Not provided'}
+• Category: ${registrationForm.registrationCategory}
 
-=== MEDICAL INFORMATION & EMERGENCY CONTACT ===
-Emergency Contact: ${registrationForm.emergencyContactName}
-Emergency Phone: ${registrationForm.emergencyContactPhone}
-Medical Condition: ${registrationForm.medicalCondition || 'None'}
-Allergies: ${registrationForm.allergies || 'None'}
-Dietary Restrictions: ${registrationForm.dietaryRestrictions || 'None'}
+MEDICAL & EMERGENCY:
+• Emergency Contact: ${registrationForm.emergencyContactName}
+• Emergency Phone: ${registrationForm.emergencyContactPhone}
+• Medical Conditions: ${registrationForm.medicalCondition || 'None'}
+• Allergies: ${registrationForm.allergies || 'None'}
+• Dietary Restrictions: ${registrationForm.dietaryRestrictions || 'None'}
 
-=== PAYMENT METHOD ===
-Preferred Method: ${registrationForm.paymentMethod}
+PAYMENT:
+• Preferred Method: ${registrationForm.paymentMethod}
 
-Accepts terms and conditions: ${registrationForm.agreeToTerms ? 'Yes' : 'No'}
-  `.trim();
+Registration submitted on: ${new Date().toLocaleString()}
+      `
+    };
 
-  const mailToLink = `mailto:clasypcs2025@gmail.com?subject=CLASYPCS 2025 Registration - ${registrationForm.fullName}&body=${encodeURIComponent(emailBody)}`;
-  
-  window.location.href = mailToLink;
+    // Send email using EmailJS
+    await emailjs.send(
+      EMAILJS_SERVICE_ID,
+      EMAILJS_TEMPLATE_ID,
+      templateParams,
+      EMAILJS_PUBLIC_KEY
+    );
+
+    submitSuccess.value = true;
+    console.log('Registration submitted successfully!');
+    
+    // Optional: Reset form after successful submission
+    // Object.assign(registrationForm, { /* reset values */ });
+    
+  } catch (error) {
+    console.error('Error submitting registration:', error);
+    invalidInputForm.value = true;
+  } finally {
+    isSubmitting.value = false;
+  }
 };
 
 const countryCodes = [
@@ -486,38 +540,32 @@ const countryCodes = [
             </div>
           </div>
 
-          <!-- Terms and Conditions -->
-          <div class="space-y-4">
-            <div class="flex items-start space-x-3 p-4 border rounded-lg">
-              <input 
-                id="agreeToTerms" 
-                type="checkbox"
-                v-model="registrationForm.agreeToTerms"
-                required
-                class="mt-1 h-4 w-4 text-primary border-gray-300 rounded focus:ring-primary"
-              />
-              <Label for="agreeToTerms" class="text-sm leading-relaxed">
-                I agree to the use of my information for processing my registration and communications related to CLASYPCS 2025. 
-                I have read and accept the 
-                <a href="#" class="text-primary underline">terms and conditions</a> 
-                of the event. *
-              </Label>
-            </div>
-          </div>
+          <!-- Success Alert -->
+          <Alert v-if="submitSuccess" class="border-green-200 bg-green-50 text-green-800 dark:border-green-800 dark:bg-green-950 dark:text-green-200">
+            <AlertCircle class="w-4 h-4" />
+            <AlertTitle>Success!</AlertTitle>
+            <AlertDescription>
+              Your registration has been submitted successfully. You will receive a confirmation email shortly.
+            </AlertDescription>
+          </Alert>
 
           <!-- Error Alert -->
           <Alert v-if="invalidInputForm" variant="destructive">
             <AlertCircle class="w-4 h-4" />
             <AlertTitle>Error</AlertTitle>
             <AlertDescription>
-              You must accept the terms and conditions to continue with registration.
+              There was an error submitting your registration. Please check your information and try again.
             </AlertDescription>
           </Alert>
 
           <!-- Submit Button -->
           <div class="flex justify-center pt-6">
-            <Button type="submit" class="w-full md:w-auto px-12 py-3 text-lg font-semibold">
-              Submit Registration
+            <Button 
+              type="submit" 
+              class="w-full md:w-auto px-12 py-3 text-lg font-semibold"
+              :disabled="isSubmitting"
+            >
+              {{ isSubmitting ? 'Submitting...' : 'Submit Registration' }}
             </Button>
           </div>
         </form>
