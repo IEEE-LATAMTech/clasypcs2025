@@ -37,7 +37,9 @@ import { ArrowRight } from "lucide-vue-next";
         </div>
 
         <p class="max-w-screen-sm mx-auto text-xl text-muted-foreground">
-          ¿que somos?
+          This event is more than just a gathering — it’s a launchpad for future changemakers.
+           Whether you're aiming to become a better leader, 
+          build an international network, or simply discover the best version of yourself, you're in the right place.
         </p>
 
         <div class="space-y-4 md:space-y-0 md:space-x-4">
