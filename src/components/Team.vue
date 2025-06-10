@@ -42,7 +42,7 @@ const teamList: TeamProps[] = [
       // },
        {
          name: "Instagram",
-         url: "https://x.com/leo_mirand4",
+         url: "https://www.instagram.com/kris.r.a/",
        },
     ],
   },
@@ -59,7 +59,7 @@ const teamList: TeamProps[] = [
       },
       {
          name: "Instagram",
-         url: "https://x.com/leo_mirand4",
+         url: "https://www.instagram.com/wvfilho?igsh=MWw0NTB4Mmp5dHYybg==",
        },
     ],
   },
@@ -76,7 +76,7 @@ const teamList: TeamProps[] = [
       },
       {
          name: "Instagram",
-         url: "https://x.com/leo_mirand4",
+         url: "https://www.instagram.com/karen_dayaparra/",
        },
     ],
   },
@@ -94,7 +94,7 @@ const teamList: TeamProps[] = [
       },
       {
          name: "Instagram",
-         url: "https://x.com/leo_mirand4",
+         url: "https://www.instagram.com/rampmaster/",
        },
     ],
   },
@@ -103,7 +103,7 @@ const teamList: TeamProps[] = [
       "/imagenesTeam/dani.jpg",
     firstName: "Daniela",
     lastName: "Briseño Pompa",
-    positions: ["Program Co-Chair", "Front-End Developer "],
+    positions: ["Participans Committee", "Front-End Developer "],
     socialNetworks: [
       {
         name: "LinkedIn",
@@ -115,6 +115,70 @@ const teamList: TeamProps[] = [
       },
     ],
   },
+  {
+    imageUrl:
+      "/imagenesTeam/cat.jpeg",
+    firstName: "Laura",
+    lastName: "Julio Gonzalez",
+    positions: ["Desing Co-Chair", ""],
+    socialNetworks: [
+      {
+        name: "LinkedIn",
+        url: "https://www.linkedin.com/in/laura-catalina-julio/",
+      },
+      // {
+      //   name: "Github",
+      //   url: "https://github.com/DaBriNan",
+      // },
+    ],
+  },
+   {
+    imageUrl:
+      "/imagenesTeam/milton.jpg",
+    firstName: "Milton",
+    lastName: "Damian Marche",
+    positions: ["Sponsor Committee", "IT Manager"],
+    socialNetworks: [
+      {
+        name: "LinkedIn",
+        url: "https://www.linkedin.com/in/milton-marche/",
+      },
+      
+    ],
+  },
+  
+  {
+    imageUrl:
+      "/imagenesTeam/ale.jpeg",
+    firstName: "Alejandra",
+    lastName: "Ponce",
+    positions: ["Desing Co-Chair", ""],
+    socialNetworks: [
+      {
+        name: "LinkedIn",
+        url: "https://www.linkedin.com/in/alejandra-ponce-a94a36280/",
+      },
+      
+    ],
+  },
+  {
+    imageUrl:
+      "/imagenesTeam/alejo.jpg",
+    firstName: "Alejandro",
+    lastName: "Escobar  Quinchia",
+    positions: ["Program Co-Chair", ""],
+    socialNetworks: [
+      {
+        name: "LinkedIn",
+        url: "https://www.linkedin.com/in/alejandro-escobar-quinch%C3%ADa/",
+      },
+      // {
+      //   name: "Github",
+      //   url: "https://github.com/DaBriNan",
+      // },
+    ],
+  },
+ 
 ];
 
 const socialIcon = (socialName: string) => {

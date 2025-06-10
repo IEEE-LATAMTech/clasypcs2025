@@ -13,7 +13,7 @@
             <!-- Imagen agregada aquí -->
             <div class="mb-6">
               <img
-                src="/images/community-banner.jpg"
+                src="/imagenesTeam/cs.jpg"
                 alt="CLASYPCS Community"
                 class="w-full max-w-md mx-auto rounded-lg shadow-lg object-cover"
               />
@@ -37,16 +37,20 @@
             like-minded enthusiasts. Click to dive in! ✨
           </CardContent>
            
-          <CardFooter>
-            <Button as-child>
-              
-                href="https://www.instagram.com/ieeeclasypcs?igsh=NDVhcjdmZ3p5ZWR6"
-                target="_blank"
-              >
-                Join Instagram
-              </a>
-            </Button>
-          </CardFooter>
+         <CardFooter>
+  <Button 
+    as-child
+    class="inline-flex items-center justify-center rounded-lg bg-gradient-to-r from-purple-500 via-pink-500 to-orange-400 hover:from-purple-600 hover:via-pink-600 hover:to-orange-500 text-white font-semibold border-0 px-8 py-3 shadow-lg transition-all duration-200 hover:shadow-xl no-underline"
+  >
+    <a
+      href="https://www.instagram.com/ieeeclasypcs?igsh=NDVhcjdmZ3p5ZWR6"
+      target="_blank"
+      class="no-underline text-white"
+    >
+      Join Instagram
+    </a>
+  </Button>
+</CardFooter>
         </Card>
       </div>
     </div>

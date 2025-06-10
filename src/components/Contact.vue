@@ -23,7 +23,7 @@ import {
   GraduationCap, 
   Building, 
   Heart, 
-  CreditCard 
+  FileText 
 } from "lucide-vue-next";
 
 interface RegistrationFormProps {
@@ -46,6 +46,7 @@ interface RegistrationFormProps {
   membershipNumber: string;
   ieeeSection: string;
   ieeeChapter: string;
+  ieeePosition: string;
   registrationCategory: string;
   
   // Medical Information & Emergency Contact
@@ -55,8 +56,9 @@ interface RegistrationFormProps {
   allergies: string;
   dietaryRestrictions: string;
   
-  // Payment Method
-  paymentMethod: string;
+  // Motivation Letter
+  motivationLetter: string;
+  additionalDocuments: string;
 }
 
 const registrationForm = reactive<RegistrationFormProps>({
@@ -79,6 +81,7 @@ const registrationForm = reactive<RegistrationFormProps>({
   membershipNumber: "",
   ieeeSection: "",
   ieeeChapter: "",
+  ieeePosition: "Member",
   registrationCategory: "Student Member",
   
   // Medical Information & Emergency Contact
@@ -88,8 +91,9 @@ const registrationForm = reactive<RegistrationFormProps>({
   allergies: "",
   dietaryRestrictions: "",
   
-  // Payment Method
-  paymentMethod: "Credit Card",
+  // Motivation Letter
+  motivationLetter: "",
+  additionalDocuments: "",
 });
 
 const invalidInputForm = ref<boolean>(false);
@@ -111,7 +115,7 @@ const handleSubmit = async () => {
       to_email: 'dan_mex22@ieee.org', // Replace with your email
       from_name: registrationForm.fullName,
       from_email: registrationForm.email,
-      subject: `CLASYPCS 2025 Registration - ${registrationForm.fullName}`,
+      subject: `CLASYPCS 2025 Scholarship Application - ${registrationForm.fullName}`,
       
       // Personal Information
       full_name: registrationForm.fullName,
@@ -131,6 +135,7 @@ const handleSubmit = async () => {
       membership_number: registrationForm.membershipNumber || 'Not provided',
       ieee_section: registrationForm.ieeeSection || 'Not provided',
       ieee_chapter: registrationForm.ieeeChapter || 'Not provided',
+      ieee_position: registrationForm.ieeePosition,
       registration_category: registrationForm.registrationCategory,
       
       // Medical & Emergency Contact
@@ -140,12 +145,13 @@ const handleSubmit = async () => {
       allergies: registrationForm.allergies || 'None',
       dietary_restrictions: registrationForm.dietaryRestrictions || 'None',
       
-      // Payment
-      payment_method: registrationForm.paymentMethod,
+      // Motivation Letter
+      motivation_letter: registrationForm.motivationLetter,
+      additional_documents: registrationForm.additionalDocuments || 'None',
       
       // Message with all information formatted
       message: `
-=== CLASYPCS 2025 REGISTRATION ===
+=== CLASYPCS 2025 SCHOLARSHIP APPLICATION ===
 
 PERSONAL INFORMATION:
 • Full Name: ${registrationForm.fullName}
@@ -164,6 +170,7 @@ IEEE INFORMATION:
 • Membership Number: ${registrationForm.membershipNumber || 'Not provided'}
 • Section: ${registrationForm.ieeeSection || 'Not provided'}
 • Chapter: ${registrationForm.ieeeChapter || 'Not provided'}
+• Position: ${registrationForm.ieeePosition}
 • Category: ${registrationForm.registrationCategory}
 
 MEDICAL & EMERGENCY:
@@ -173,8 +180,9 @@ MEDICAL & EMERGENCY:
 • Allergies: ${registrationForm.allergies || 'None'}
 • Dietary Restrictions: ${registrationForm.dietaryRestrictions || 'None'}
 
-PAYMENT:
-• Preferred Method: ${registrationForm.paymentMethod}
+MOTIVATION LETTER:
+• Letter: ${registrationForm.motivationLetter}
+• Additional Documents: ${registrationForm.additionalDocuments || 'None'}
 
 Registration submitted on: ${new Date().toLocaleString()}
       `
@@ -189,13 +197,13 @@ Registration submitted on: ${new Date().toLocaleString()}
     );
 
     submitSuccess.value = true;
-    console.log('Registration submitted successfully!');
+    console.log('Scholarship application submitted successfully!');
     
     // Optional: Reset form after successful submission
     // Object.assign(registrationForm, { /* reset values */ });
     
   } catch (error) {
-    console.error('Error submitting registration:', error);
+    console.error('Error submitting scholarship application:', error);
     invalidInputForm.value = true;
   } finally {
     isSubmitting.value = false;
@@ -235,11 +243,9 @@ const countryCodes = [
   >
     <div class="mb-8 text-center">
       <h2 class="text-lg text-primary mb-2 tracking-wider">Join Us</h2>
-      <h2 class="text-3xl md:text-4xl font-bold">Apply for a Scholarship for CLASYPCS 2025</h2>
+      <h2 class="text-3xl md:text-4xl font-bold">Register for CLASYPCS 2025</h2>
       <p class="mt-4 text-muted-foreground">
         Complete all sections to secure your spot at the conference
-        Apply for our scholarship program and get the chance to attend the event with covered or reduced costs.
-        We’re looking for motivated, curious, and committed individuals who are ready to grow and give back.
       </p>
     </div>
 
@@ -434,7 +440,7 @@ const countryCodes = [
                 <Input
                   id="ieeeSection"
                   type="text"
-                  placeholder="Mexico Section"
+                  placeholder="Uruguay Section"
                   v-model="registrationForm.ieeeSection"
                 />
               </div>
@@ -444,7 +450,7 @@ const countryCodes = [
                 <Input
                   id="ieeeChapter"
                   type="text"
-                  placeholder="Computer Society, WIE, etc."
+                  placeholder="Computer Society, Student Branch, etc."
                   v-model="registrationForm.ieeeChapter"
                 />
               </div>
@@ -532,28 +538,46 @@ const countryCodes = [
             </div>
           </div>
 
-          <!-- Payment Method -->
+          <!-- Motivation Letter -->
           <div class="space-y-6">
             <div class="flex items-center gap-2 border-b pb-2">
-              <CreditCard class="w-5 h-5 text-primary" />
-              <h3 class="text-xl font-semibold text-primary">Payment Method</h3>
+              <FileText class="w-5 h-5 text-primary" />
+              <h3 class="text-xl font-semibold text-primary">Motivation Letter</h3>
             </div>
             
-            <div class="flex flex-col gap-1.5">
-              <Label for="paymentMethod">Preferred Payment Method *</Label>
-              <Select v-model="registrationForm.paymentMethod">
-                <SelectTrigger>
-                  <SelectValue placeholder="Select payment method" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectGroup>
-                    <SelectItem value="Credit Card">Credit Card</SelectItem>
-                    <SelectItem value="Debit Card">Debit Card</SelectItem>
-                    <SelectItem value="Bank Transfer">Bank Transfer</SelectItem>
-                    <SelectItem value="PayPal">PayPal</SelectItem>
-                  </SelectGroup>
-                </SelectContent>
-              </Select>
+            <div class="space-y-6">
+              <div class="flex flex-col gap-1.5">
+                <Label for="motivationLetter">Why do you want to attend CLASYPCS 2025? *</Label>
+                <Textarea
+                  id="motivationLetter"
+                  placeholder="Please tell us about your motivations, goals, and how attending this conference will benefit your academic/professional development. What do you hope to learn and contribute? (Minimum 200 words)"
+                  rows="8"
+                  v-model="registrationForm.motivationLetter"
+                  required
+                  class="min-h-[200px]"
+                />
+                <p class="text-sm text-muted-foreground">
+                  This is your opportunity to tell us about yourself, your goals, and why you deserve this scholarship.
+                </p>
+              </div>
+
+              <div class="flex flex-col gap-1.5">
+                <Label for="additionalDocuments">Additional Documents (Optional)</Label>
+                <Textarea
+                  id="additionalDocuments"
+                  placeholder="Please list any additional documents you would like us to consider (CV, recommendation letters, portfolio, etc.). You can send these documents separately to r9-syp@computer.org with your name in the subject line."
+                  rows="4"
+                  v-model="registrationForm.additionalDocuments"
+                />
+                <div class="p-4 bg-muted/50 rounded-lg">
+                  <p class="text-sm text-muted-foreground">
+                    <strong>📄 Document Submission:</strong> 
+                    After submitting this form, you can send your supporting documents (PDF format) to 
+                    <a href="mailto:r9-syp@computer.org" class="text-primary underline">r9-syp@computer.org</a>
+                    with the subject line: "CLASYPCS 2025 Documents - [Your Full Name]"
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -562,7 +586,7 @@ const countryCodes = [
             <AlertCircle class="w-4 h-4" />
             <AlertTitle>Success!</AlertTitle>
             <AlertDescription>
-              Your registration has been submitted successfully. You will receive a confirmation email shortly.
+              Your scholarship application has been submitted successfully. You will receive a confirmation email shortly. Don't forget to send your supporting documents to r9-syp@computer.org if you mentioned any.
             </AlertDescription>
           </Alert>
 
@@ -571,7 +595,7 @@ const countryCodes = [
             <AlertCircle class="w-4 h-4" />
             <AlertTitle>Error</AlertTitle>
             <AlertDescription>
-              There was an error submitting your registration. Please check your information and try again.
+              There was an error submitting your scholarship application. Please check your information and try again.
             </AlertDescription>
           </Alert>
 
@@ -582,7 +606,7 @@ const countryCodes = [
               class="w-full md:w-auto px-12 py-3 text-lg font-semibold"
               :disabled="isSubmitting"
             >
-              {{ isSubmitting ? 'Submitting...' : 'Submit Registration' }}
+              {{ isSubmitting ? 'Submitting...' : 'Submit Application' }}
             </Button>
           </div>
         </form>
