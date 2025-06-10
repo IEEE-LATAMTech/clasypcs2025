@@ -29,4 +29,6 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     #- run: npm test
+    - run: git config --global user.email "r9-syp@computer.org"
+    - run: git config --global user.name "R9 SYP Team"
     - run: npm run deploy
