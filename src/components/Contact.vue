@@ -2,7 +2,7 @@
 import { ref, reactive } from "vue";
 import emailjs from '@emailjs/browser';
 import { Button } from "./ui/button";
-import { Card, CardContent} from "./ui/card";
+import { Card, CardContent } from "./ui/card";
 import { Label } from "./ui/label";
 import { Input } from "./ui/input";
 import {
@@ -45,6 +45,7 @@ interface RegistrationFormProps {
   // IEEE Information
   membershipNumber: string;
   ieeeSection: string;
+  ieeeChapter: string;
   registrationCategory: string;
   
   // Medical Information & Emergency Contact
@@ -77,6 +78,7 @@ const registrationForm = reactive<RegistrationFormProps>({
   // IEEE Information
   membershipNumber: "",
   ieeeSection: "",
+  ieeeChapter: "",
   registrationCategory: "Student Member",
   
   // Medical Information & Emergency Contact
@@ -98,6 +100,7 @@ const submitSuccess = ref<boolean>(false);
 const EMAILJS_SERVICE_ID = 'service_e9x87vp';
 const EMAILJS_TEMPLATE_ID = 'template_m25v52h';
 const EMAILJS_PUBLIC_KEY = '7PgYcd9fDVBNItAkJ';
+
 const handleSubmit = async () => {
   invalidInputForm.value = false;
   isSubmitting.value = true;
@@ -127,6 +130,7 @@ const handleSubmit = async () => {
       // IEEE Information
       membership_number: registrationForm.membershipNumber || 'Not provided',
       ieee_section: registrationForm.ieeeSection || 'Not provided',
+      ieee_chapter: registrationForm.ieeeChapter || 'Not provided',
       registration_category: registrationForm.registrationCategory,
       
       // Medical & Emergency Contact
@@ -159,6 +163,7 @@ ACADEMIC INFORMATION:
 IEEE INFORMATION:
 • Membership Number: ${registrationForm.membershipNumber || 'Not provided'}
 • Section: ${registrationForm.ieeeSection || 'Not provided'}
+• Chapter: ${registrationForm.ieeeChapter || 'Not provided'}
 • Category: ${registrationForm.registrationCategory}
 
 MEDICAL & EMERGENCY:
@@ -230,9 +235,11 @@ const countryCodes = [
   >
     <div class="mb-8 text-center">
       <h2 class="text-lg text-primary mb-2 tracking-wider">Join Us</h2>
-      <h2 class="text-3xl md:text-4xl font-bold">Register for CLASYPCS 2025</h2>
+      <h2 class="text-3xl md:text-4xl font-bold">Apply for a Scholarship for CLASYPCS 2025</h2>
       <p class="mt-4 text-muted-foreground">
         Complete all sections to secure your spot at the conference
+        Apply for our scholarship program and get the chance to attend the event with covered or reduced costs.
+        We’re looking for motivated, curious, and committed individuals who are ready to grow and give back.
       </p>
     </div>
 
@@ -427,12 +434,22 @@ const countryCodes = [
                 <Input
                   id="ieeeSection"
                   type="text"
-                  placeholder="Uruguay Section"
+                  placeholder="Mexico Section"
                   v-model="registrationForm.ieeeSection"
                 />
               </div>
 
-              <div class="flex flex-col gap-1.5 md:col-span-2">
+              <div class="flex flex-col gap-1.5">
+                <Label for="ieeeChapter">IEEE Chapter</Label>
+                <Input
+                  id="ieeeChapter"
+                  type="text"
+                  placeholder="Computer Society, WIE, etc."
+                  v-model="registrationForm.ieeeChapter"
+                />
+              </div>
+
+              <div class="flex flex-col gap-1.5">
                 <Label for="registrationCategory">Registration Category *</Label>
                 <Select v-model="registrationForm.registrationCategory">
                   <SelectTrigger>

@@ -14,27 +14,27 @@ interface FAQProps {
 
 const FAQList: FAQProps[] = [
   {
-    question: "Duis aute irure dolor in reprehenderit in voluptate velit?",
+    question: "Will there be networking opportunities??",
     answer:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint labore quidem quam consectetur sapiente, iste rerum reiciendis animi nihil nostrum sit quo, modi quod.",
+      "Absolutely! The event is built around collaboration. ",
     value: "item-2",
   },
   {
     question:
-      "Lorem ipsum dolor sit amet Consectetur natus dolor minus quibusdam?",
+      "How does the scholarship work?",
     answer:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore qui nostrum reiciendis veritatis.",
+      "We offer a limited number of scholarships to cover full or partial costs of the event. ",
     value: "item-3",
   },
   {
-    question: "Excepteur sint occaecat cupidata non proident sunt?",
-    answer: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+    question: "How can I register?",
+    answer: "You can sign up through our website by clicking [Register Now]. Make sure to register early — spots are limited and may fill up quickly.",
     value: "item-4",
   },
   {
     question:
-      "Enim ad minim veniam, quis nostrud exercitation ullamco laboris?",
-    answer: "consectetur adipisicing elit. Sint labore.",
+      "When and where will the event take place?",
+    answer: "The event will be held on October 03 and 04  at Montevideo, Uruguay. ",
     value: "item-5",
   },
 ];

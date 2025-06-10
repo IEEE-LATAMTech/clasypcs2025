@@ -32,7 +32,7 @@ import { ArrowRight } from "lucide-vue-next";
               class="text-transparent bg-gradient-to-r from-[#D247BF] to-primary bg-clip-text"
               >CLASYPCS 2025
             </span>
-            in Montevideo, Uruguay
+            in Montevideo, Uruguay 03-04 Oct
           </h1>
         </div>
 
