@@ -10,6 +10,7 @@ import {
 import LinkedInIcon from "@/icons/LinkedInIcon.vue";
 import GithubIcon from "@/icons/GithubIcon.vue";
 import XIcon from "@/icons/XIcon.vue";
+import InstagramIcon from "@/icons/InstagramIcon.vue";
 
 interface TeamProps {
   imageUrl: string;
@@ -39,10 +40,10 @@ const teamList: TeamProps[] = [
       //   name: "Github",
       //   url: "https://github.com/leoMirandaa",
       // },
-      // {
-      //   name: "X",
-      //   url: "https://x.com/leo_mirand4",
-      // },
+       {
+         name: "Instagram",
+         url: "https://x.com/leo_mirand4",
+       },
     ],
   },
   {
@@ -56,10 +57,10 @@ const teamList: TeamProps[] = [
         name: "LinkedIn",
         url: "https://www.linkedin.com/in/waldir-ventura-filho/",
       },
-      // {
-      //   name: "X",
-      //   url: "https://x.com/leo_mirand4",
-      // },
+      {
+         name: "Instagram",
+         url: "https://x.com/leo_mirand4",
+       },
     ],
   },
   {
@@ -73,28 +74,47 @@ const teamList: TeamProps[] = [
         name: "LinkedIn",
         url: "https://www.linkedin.com/in/karen-tovar-parra/",
       },
-      // {
-      //   name: "Github",
-      //   url: "https://github.com/leoMirandaa",
-      // },
+      {
+         name: "Instagram",
+         url: "https://x.com/leo_mirand4",
+       },
     ],
-  }
- 
-  
-  
-  // {
-  //   imageUrl:
-  //     "https://images.unsplash.com/photo-1573497019236-17f8177b81e8?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dhttps://images.unsplash.com/photo-1573497019236-17f8177b81e8?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  //   firstName: "Pam",
-  //   lastName: "Taylor",
-  //   positions: ["Fullstack developer", "UX Researcher"],
-  //   socialNetworks: [
-  //     {
-  //       name: "X",
-  //       url: "https://x.com/leo_mirand4",
-  //     },
-  //   ],
-  // },
+  },
+
+  {
+    imageUrl:
+      "/imagenesTeam/roberto.jpeg",
+    firstName: "Roberto",
+    lastName: "Moreno Pérez",
+    positions: ["Program Co-Chair", "Business Inteligence"],
+    socialNetworks: [
+      {
+        name: "LinkedIn",
+        url: "https://www.linkedin.com/in/rmorenp/",
+      },
+      {
+         name: "Instagram",
+         url: "https://x.com/leo_mirand4",
+       },
+    ],
+  },
+  {
+    imageUrl:
+      "/imagenesTeam/dani.jpg",
+    firstName: "Daniela",
+    lastName: "Briseño Pompa",
+    positions: ["Program Co-Chair", "Front-End Developer "],
+    socialNetworks: [
+      {
+        name: "LinkedIn",
+        url: "https://www.linkedin.com/in/daniela-brise%C3%B1o-1820ab29a/",
+      },
+      {
+        name: "Github",
+        url: "https://github.com/DaBriNan",
+      },
+    ],
+  },
 ];
 
 const socialIcon = (socialName: string) => {
@@ -107,6 +127,9 @@ const socialIcon = (socialName: string) => {
 
     case "X":
       return XIcon;
+    
+      case "Instagram":
+      return InstagramIcon;
   }
 };
 </script>
