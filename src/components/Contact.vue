@@ -266,7 +266,7 @@ const countryCodes = [
                 <Input
                   id="fullName"
                   type="text"
-                  placeholder="John Smith Garcia"
+                  placeholder="Juan Perez Garcia"
                   v-model="registrationForm.fullName"
                   required
                 />
@@ -277,7 +277,7 @@ const countryCodes = [
                 <Input
                   id="email"
                   type="email"
-                  placeholder="john.smith@university.edu"
+                  placeholder="juan.garciah@ieee.org"
                   v-model="registrationForm.email"
                   required
                 />
@@ -288,7 +288,7 @@ const countryCodes = [
                 <Input
                   id="countryOfOrigin"
                   type="text"
-                  placeholder="Uruguay"
+                  placeholder="Mexico"
                   v-model="registrationForm.countryOfOrigin"
                   required
                 />
@@ -315,7 +315,7 @@ const countryCodes = [
                 <Input
                   id="phoneNumber"
                   type="tel"
-                  placeholder="099123456"
+                  placeholder="1258946751"
                   v-model="registrationForm.phoneNumber"
                   required
                 />
@@ -362,7 +362,7 @@ const countryCodes = [
                 <Input
                   id="universityName"
                   type="text"
-                  placeholder="University of the Republic"
+                  placeholder="Instituto Teconologico de Morelia"
                   v-model="registrationForm.universityName"
                   required
                 />
@@ -440,7 +440,7 @@ const countryCodes = [
                 <Input
                   id="ieeeSection"
                   type="text"
-                  placeholder="Uruguay Section"
+                  placeholder="Centro Occidente Section"
                   v-model="registrationForm.ieeeSection"
                 />
               </div>
@@ -489,7 +489,7 @@ const countryCodes = [
                 <Input
                   id="emergencyContactName"
                   type="text"
-                  placeholder="Maria Smith"
+                  placeholder="Abril Gomez"
                   v-model="registrationForm.emergencyContactName"
                   required
                 />
@@ -500,7 +500,7 @@ const countryCodes = [
                 <Input
                   id="emergencyContactPhone"
                   type="tel"
-                  placeholder="+1 555 123 4567"
+                  placeholder="+52 555 123 4567"
                   v-model="registrationForm.emergencyContactPhone"
                   required
                 />
@@ -510,7 +510,7 @@ const countryCodes = [
                 <Label for="medicalCondition">Important Medical Condition</Label>
                 <Textarea
                   id="medicalCondition"
-                  placeholder="Describe any relevant medical conditions..."
+                  placeholder="Describe any relevant medical conditions... "
                   rows="3"
                   v-model="registrationForm.medicalCondition"
                 />
@@ -550,7 +550,7 @@ const countryCodes = [
                 <Label for="motivationLetter">Why do you want to attend CLASYPCS 2025? *</Label>
                 <Textarea
                   id="motivationLetter"
-                  placeholder="Please tell us about your motivations, goals, and how attending this conference will benefit your academic/professional development. What do you hope to learn and contribute? (Minimum 200 words)"
+                  placeholder="Please tell us about your motivations, goals, position on IEEE and how attending this conference will benefit your academic/professional development. What do you hope to learn and contribute? (Minimum 200 words)"
                   rows="8"
                   v-model="registrationForm.motivationLetter"
                   required

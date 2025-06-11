@@ -35,7 +35,7 @@ interface RouteProps {
 
 const routeList: RouteProps[] = [
   {
-    href: "#contact",
+    href: "#registration",
     label: "Registration",
   },
   {
