@@ -36,7 +36,7 @@ interface RouteProps {
 const routeList: RouteProps[] = [
   {
     href: "#registration",
-    label: "Registration",
+    label: "Apply for a scholarship"
   },
   {
     href: "#services",
