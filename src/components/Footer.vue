@@ -27,27 +27,10 @@ import Separator from "./ui/separator/Separator.vue";
 
         <div class="flex flex-col gap-2">
           <h3 class="font-bold text-lg">Contact</h3>
-          <!-- <div>
-            <a
-              href="#"
-              class="opacity-60 hover:opacity-100"
-            >
-              Github
-            </a>
-          </div> -->
-
+        
           <div>
             <a
-              href="#"
-              class="opacity-60 hover:opacity-100"
-            >
-              Twitter
-            </a>
-          </div>
-
-          <div>
-            <a
-              href="#"
+              href="https://www.instagram.com/ieeeclasypcs?igsh=NDVhcjdmZ3p5ZWR6"
               class="opacity-60 hover:opacity-100"
             >
               Instagram
@@ -55,41 +38,13 @@ import Separator from "./ui/separator/Separator.vue";
           </div>
         </div>
 
-        <div class="flex flex-col gap-2">
-          <h3 class="font-bold text-lg">Platforms</h3>
-          <div>
-            <a
-              href="#"
-              class="opacity-60 hover:opacity-100"
-            >
-              iOS
-            </a>
-          </div>
-
-          <div>
-            <a
-              href="#"
-              class="opacity-60 hover:opacity-100"
-            >
-              Android
-            </a>
-          </div>
-
-          <div>
-            <a
-              href="#"
-              class="opacity-60 hover:opacity-100"
-            >
-              Web
-            </a>
-          </div>
-        </div>
+        
 
         <div class="flex flex-col gap-2">
           <h3 class="font-bold text-lg">Help</h3>
           <div>
             <a
-              href="#"
+              href="#registration"
               class="opacity-60 hover:opacity-100"
             >
               Contact Us
@@ -98,51 +53,36 @@ import Separator from "./ui/separator/Separator.vue";
 
           <div>
             <a
-              href="#"
+              href="#faq"
               class="opacity-60 hover:opacity-100"
             >
               FAQ
             </a>
           </div>
 
-          <div>
-            <a
-              href="#"
-              class="opacity-60 hover:opacity-100"
-            >
-              Feedback
-            </a>
-          </div>
+          
         </div>
 
         <div class="flex flex-col gap-2">
           <h3 class="font-bold text-lg">Socials</h3>
           <div>
             <a
-              href="#"
+              href="https://www.linkedin.com/company/ieeecomputerr9/posts/?feedView=all"
               class="opacity-60 hover:opacity-100"
             >
-              Twitch
+              LinkedIn
             </a>
           </div>
 
           <div>
             <a
-              href="#"
+              href="https://www.instagram.com/ieeeclasypcs?igsh=NDVhcjdmZ3p5ZWR6"
               class="opacity-60 hover:opacity-100"
             >
-              Discord
+              Instagram
             </a>
           </div>
 
-          <div>
-            <a
-              href="#"
-              class="opacity-60 hover:opacity-100"
-            >
-              Dribbble
-            </a>
-          </div>
         </div>
       </div>
 
