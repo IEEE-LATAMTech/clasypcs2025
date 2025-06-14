@@ -11,12 +11,16 @@ import Community from "./components/Community.vue";
 import Contact from "./components/Contact.vue";
 import FAQ from "./components/FAQ.vue";
 import Footer from "./components/Footer.vue";
+
+import Speakers from "./components/Speakers.vue";
+
 </script>
 
 <template>
   <Navbar />
   <Hero />
   <Benefits />
+  <Speakers />
   <Sponsors />
   <Features />
   <Community />

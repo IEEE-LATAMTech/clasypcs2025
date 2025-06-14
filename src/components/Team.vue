@@ -103,7 +103,7 @@ const teamList: TeamProps[] = [
       "/imagenesTeam/dani.jpg",
     firstName: "Daniela",
     lastName: "Briseño Pompa",
-    positions: ["Participans Committee", "Front-End Developer "],
+    positions: ["Participants Committee", "Front-End Developer "],
     socialNetworks: [
       {
         name: "LinkedIn",
