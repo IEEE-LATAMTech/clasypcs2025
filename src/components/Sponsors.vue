@@ -153,10 +153,10 @@ Inquiry submitted on: ${new Date().toLocaleString()}
   }
 };
 
-const resetForm = () => {
-  submitError.value = false;
-  submitSuccess.value = false;
-};
+// const resetForm = () => {
+//   submitError.value = false;
+//   submitSuccess.value = false;
+// };
 </script>
 
 <template>
