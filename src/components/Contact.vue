@@ -358,11 +358,11 @@ const countryCodes = [
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div class="flex flex-col gap-1.5 md:col-span-2">
-                <Label for="universityName">University Name *</Label>
+                <Label for="universityName">University Name/Company/ Institute*</Label>
                 <Input
                   id="universityName"
                   type="text"
-                  placeholder="Instituto Teconologico de Morelia"
+                  placeholder="Instituto Tecnologico de Morelia/Cisco/Institute of Massachusetts"
                   v-model="registrationForm.universityName"
                   required
                 />
@@ -463,7 +463,11 @@ const countryCodes = [
                   </SelectTrigger>
                   <SelectContent>
                     <SelectGroup>
-                      <SelectItem value="Student Chair">Student Chair</SelectItem>
+                      <SelectItem value="Student Chair">Chair</SelectItem>
+                      <SelectItem value="Student Chair">Vice-Chair</SelectItem>
+                      <SelectItem value="Student Chair">Secretary</SelectItem>
+                      <SelectItem value="Student Chair">Treasure</SelectItem>
+                      <SelectItem value="Student Chair">Web Master</SelectItem>
                       <SelectItem value="Student Member">Student Member</SelectItem>
                       <SelectItem value="Member">Member</SelectItem>
                       <SelectItem value="Student and Young Professional">Student and Young Professional</SelectItem>
