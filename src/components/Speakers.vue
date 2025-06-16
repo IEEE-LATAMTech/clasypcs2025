@@ -125,24 +125,24 @@ const speakersList: SpeakerProps[] = [
 //       },
 //     ],
 //   },
-  {
-    imageUrl: "",
-    name: "Comming soon",
-    title: "Comming soon",
-    company: "Comming soon",
-    talkTopic: "Comming soon",
-    bio: "Comming soon.",
-    socialNetworks: [
-    //   {
-    //     name: "LinkedIn",
-    //     url: "https://www.linkedin.com/in/sofia-morales",
-    //   },
-    //   {
-    //     name: "X",
-    //     url: "https://x.com/sofia_cloud",
-    //   },
-    ],
-  },
+  // {
+  //   imageUrl: "",
+  //   name: "Comming soon",
+  //   title: "Comming soon",
+  //   company: "Comming soon",
+  //   talkTopic: "Comming soon",
+  //   bio: "Comming soon.",
+  //   socialNetworks: [
+  //     {
+  //        name: "LinkedIn",
+  //        url: "https://www.linkedin.com/in/sofia-morales",
+  //      },
+  //      {
+  //        name: "X",
+  //        url: "https://x.com/sofia_cloud",
+  //      },
+  //   ],
+  // },
 ];
 
 const socialIcon = (socialName: string) => {
