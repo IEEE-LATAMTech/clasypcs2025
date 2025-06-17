@@ -39,6 +39,10 @@ const routeList: RouteProps[] = [
     label: "Apply for a scholarship"
   },
   {
+    href: "#pricing",
+    label: "Pricing",
+  },
+  {
     href: "#services",
     label: "Location",
   },

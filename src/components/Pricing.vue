@@ -127,7 +127,7 @@ const plans: PlanProps[] = [
 </script>
 
 <template>
-  <section class="container py-24 sm:py-32">
+  <section id="pricing" class="container py-24 sm:py-32">
     <!-- Header -->
     <div class="text-center mb-16">
       <h2 class="text-lg text-primary text-center mb-2 tracking-wider">
