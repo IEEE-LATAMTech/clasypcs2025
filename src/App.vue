@@ -14,6 +14,8 @@ import Footer from "./components/Footer.vue";
 
 import Speakers from "./components/Speakers.vue";
 
+import Pricing from "./components/Pricing.vue";
+
 </script>
 
 <template>
@@ -26,6 +28,7 @@ import Speakers from "./components/Speakers.vue";
   <Community />
   <Services />
   <HowItWorks />
+  <Pricing/>
   <Contact />
   
   <Team />
