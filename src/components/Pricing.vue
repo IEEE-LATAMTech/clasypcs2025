@@ -146,6 +146,24 @@ const plans: PlanProps[] = [
       </p>
     </div>
 
+    <!-- Scholarship Banner -->
+    <div class="mb-12">
+      <div class="max-w-4xl mx-auto bg-gradient-to-r from-[#D247BF]/10 to-primary/10 rounded-xl border border-primary/20 p-6 text-center">
+        <h3 class="text-xl font-bold mb-2 flex items-center justify-center gap-2">
+          🎓 <span class="text-transparent bg-gradient-to-r from-[#D247BF] to-primary bg-clip-text">Scholarships Available!</span>
+        </h3>
+        <p class="text-muted-foreground mb-4">
+          Can't afford the full registration fee? Apply for our scholarship program and get the chance to attend with covered or reduced costs.
+        </p>
+        <Button as-child variant="outline" class="border-primary text-primary hover:bg-primary hover:text-white">
+          <a href="#registration" class="flex items-center gap-2">
+            <span>Apply for Scholarship</span>
+            <span class="text-sm">→</span>
+          </a>
+        </Button>
+      </div>
+    </div>
+
     <!-- Pricing Cards -->
     <div class="space-y-12">
       <!-- Student Section -->
@@ -199,6 +217,11 @@ const plans: PlanProps[] = [
                   </div>
                 </div>
                 <p class="text-xs text-muted-foreground">Conference registration</p>
+                <div class="mt-3 p-2 bg-green-50 dark:bg-green-950 rounded-lg border border-green-200 dark:border-green-800">
+                  <p class="text-xs text-green-700 dark:text-green-300 font-medium">
+                    💡 Scholarship available
+                  </p>
+                </div>
               </div>
             </CardHeader>
 
@@ -273,6 +296,11 @@ const plans: PlanProps[] = [
                   </div>
                 </div>
                 <p class="text-xs text-muted-foreground">Conference registration</p>
+                <div class="mt-3 p-2 bg-green-50 dark:bg-green-950 rounded-lg border border-green-200 dark:border-green-800">
+                  <p class="text-xs text-green-700 dark:text-green-300 font-medium">
+                    💡 Scholarship available
+                  </p>
+                </div>
               </div>
             </CardHeader>
 
@@ -352,16 +380,16 @@ const plans: PlanProps[] = [
         </div>
         <div class="flex items-center justify-center gap-2">
           <Check class="w-4 h-4 text-green-500" />
-          <span>Membership verification</span>
+          <span>Financial aid available</span>
         </div>
-        
       </div>
 
       <div class="bg-muted/50 rounded-lg p-4 max-w-3xl mx-auto">
         <p class="text-sm text-muted-foreground">
           <strong>Membership Verification:</strong> Valid IEEE/CS membership required for discounted rates. 
           <strong>Student Status:</strong> Valid student ID required. 
-          
+          <strong>Scholarships:</strong> Financial assistance available - apply through our scholarship program.
+         
         </p>
       </div>
     </div>
