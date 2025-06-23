@@ -72,7 +72,7 @@ import { ArrowRight } from "lucide-vue-next";
 
        <img
         class="w-3/4 md:w-1/2 lg:w-2/5 xl:w-1/3 mx-auto rounded-lg relative leading-none flex items-center border border-t-2 border-t-primary/30 img-border-animation"
-            :src="mode == 'light' ? 'Bodoque07.svg ' : 'Bodoque04.svg'"
+            :src="mode == 'light' ? 'BannerBecas.jpeg ' : 'BannerBecas.jpeg'"
             alt="dashboard using shadcn-vue"
           />
 

@@ -463,11 +463,11 @@ const countryCodes = [
                   </SelectTrigger>
                   <SelectContent>
                     <SelectGroup>
-                      <SelectItem value="Student Chair">Chair</SelectItem>
-                      <SelectItem value="Student Chair">Vice-Chair</SelectItem>
-                      <SelectItem value="Student Chair">Secretary</SelectItem>
-                      <SelectItem value="Student Chair">Treasure</SelectItem>
-                      <SelectItem value="Student Chair">Web Master</SelectItem>
+                      <SelectItem value="Chair">Chair</SelectItem>
+                      <SelectItem value="Vice-Chair">Vice-Chair</SelectItem>
+                      <SelectItem value="Secretary">Secretary</SelectItem>
+                      <SelectItem value="Treasure">Treasure</SelectItem>
+                      <SelectItem value="Web Master">Web Master</SelectItem>
                       <SelectItem value="Student Member">Student Member</SelectItem>
                       <SelectItem value="Member">Member</SelectItem>
                       <SelectItem value="Student and Young Professional">Student and Young Professional</SelectItem>

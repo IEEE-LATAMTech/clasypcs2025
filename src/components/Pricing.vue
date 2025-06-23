@@ -389,7 +389,6 @@ const plans: PlanProps[] = [
           <strong>Membership Verification:</strong> Valid IEEE/CS membership required for discounted rates. 
           <strong>Student Status:</strong> Valid student ID required. 
           <strong>Scholarships:</strong> Financial assistance available - apply through our scholarship program.
-         
         </p>
       </div>
     </div>
