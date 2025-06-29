@@ -152,7 +152,7 @@ const teamList: TeamProps[] = [
       "/imagenesTeam/ale.jpeg",
     firstName: "Alejandra",
     lastName: "Ponce",
-    positions: ["Design Co-Chair", ""],
+    positions: ["Design Co-Chair", "Computer Systems Student"],
     socialNetworks: [
       {
         name: "LinkedIn",
@@ -166,11 +166,28 @@ const teamList: TeamProps[] = [
       "/imagenesTeam/alejo.jpg",
     firstName: "Alejandro",
     lastName: "Escobar  Quinchia",
-    positions: ["Program Co-Chair", ""],
+    positions: ["Program Co-Chair", "Junior Robotics Enginner"],
     socialNetworks: [
       {
         name: "LinkedIn",
         url: "https://www.linkedin.com/in/alejandro-escobar-quinch%C3%ADa/",
+      },
+      // {
+      //   name: "Github",
+      //   url: "https://github.com/DaBriNan",
+      // },
+    ],
+  },
+  {
+    imageUrl:
+      "/imagenesTeam/michel.jpeg",
+    firstName: "Michel",
+    lastName: "Adelino",
+    positions: ["Design Co-Chair", "Software Enginner"],
+    socialNetworks: [
+      {
+        name: "LinkedIn",
+        url: "https://www.linkedin.com/in/michel-adelino/",
       },
       // {
       //   name: "Github",
