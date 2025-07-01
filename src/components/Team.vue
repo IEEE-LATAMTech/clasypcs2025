@@ -166,7 +166,7 @@ const teamList: TeamProps[] = [
       "/imagenesTeam/alejo.jpg",
     firstName: "Alejandro",
     lastName: "Escobar  Quinchia",
-    positions: ["Program Co-Chair", "Junior Robotics Enginner"],
+    positions: ["Program Co-Chair", "Junior Robotics Engineer"],
     socialNetworks: [
       {
         name: "LinkedIn",
@@ -183,7 +183,7 @@ const teamList: TeamProps[] = [
       "/imagenesTeam/michel.jpeg",
     firstName: "Michel",
     lastName: "Adelino",
-    positions: ["Design Co-Chair", "Software Enginner"],
+    positions: ["Design Co-Chair", "Software Engineer"],
     socialNetworks: [
       {
         name: "LinkedIn",
