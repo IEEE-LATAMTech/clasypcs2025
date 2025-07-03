@@ -195,7 +195,8 @@ const getIconColor = (socialName: string) => {
     </div>
 
     <div
-      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
+      class="flex justify-center" 
+      
     >
       <Card
         v-for="{
