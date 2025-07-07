@@ -166,7 +166,7 @@ const teamList: TeamProps[] = [
       "/imagenesTeam/alejo.jpg",
     firstName: "Alejandro",
     lastName: "Escobar  Quinchia",
-    positions: ["Program Co-Chair", "Junior Robotics Engineer"],
+    positions: ["Program Co-Chair", " "],
     socialNetworks: [
       {
         name: "LinkedIn",

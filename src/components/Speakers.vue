@@ -32,7 +32,7 @@ const speakersList: SpeakerProps[] = [
     name: "Dr. Luis Kun",
     title: "Life fellow IEEE",
     company: "William Perry Center for Hemispheric Defense Studies",
-    talkTopic: "Comming soon",
+    talkTopic: "Interdisciplinary Work",
     bio: "Distinguished Professor Emeritus of National Security Affairs.",
     socialNetworks: [
       {

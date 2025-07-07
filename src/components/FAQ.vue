@@ -23,7 +23,7 @@ const FAQList: FAQProps[] = [
     question:
       "How does the scholarship work?",
     answer:
-      "We offer a limited number of scholarships to cover full or partial costs of the event. ",
+      "We offer a limited number of scholarships to cover partial costs of the event. ",
     value: "item-3",
   },
   {

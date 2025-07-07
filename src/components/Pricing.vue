@@ -80,7 +80,7 @@ const plans: PlanProps[] = [
     price: 195,
     description: "For current Computer Society professional members with valid membership.",
     buttonText: "Register as CS Professional",
-    badge: "Professional Value",
+    badge: "",
     benefitList: [
       "Computer Society member discount",
       "Full conference access",
@@ -190,7 +190,6 @@ const plans: PlanProps[] = [
                 :class="{
                   'bg-gradient-to-r from-[#D247BF] to-primary text-white': plan.popular === PopularPlan.YES,
                   'bg-gradient-to-r from-green-500 to-green-600 text-white': plan.badge === 'Best Value',
-                  'bg-gradient-to-r from-blue-500 to-blue-600 text-white': plan.badge === 'Professional Value',
                 }"
                 class="px-4 py-2 rounded-full text-xs font-semibold flex items-center gap-2 transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg"
               >
@@ -269,7 +268,6 @@ const plans: PlanProps[] = [
                 :class="{
                   'bg-gradient-to-r from-[#D247BF] to-primary text-white': plan.popular === PopularPlan.YES,
                   'bg-gradient-to-r from-green-500 to-green-600 text-white': plan.badge === 'Best Value',
-                  'bg-gradient-to-r from-blue-500 to-blue-600 text-white': plan.badge === 'Professional Value',
                 }"
                 class="px-4 py-2 rounded-full text-xs font-semibold flex items-center gap-2 transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg"
               >
