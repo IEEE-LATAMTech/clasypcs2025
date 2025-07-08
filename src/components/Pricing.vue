@@ -153,7 +153,7 @@ const plans: PlanProps[] = [
           🎓 <span class="text-transparent bg-gradient-to-r from-[#D247BF] to-primary bg-clip-text">Scholarships Available!</span>
         </h3>
         <p class="text-muted-foreground mb-4">
-          Can't afford the full registration fee? Apply for our scholarship program and get the chance to attend with covered or reduced costs.
+          Can't afford the full registration fee? Apply for our scholarship program and get the chance to attend with reduced costs.
         </p>
         <Button as-child variant="outline" class="border-primary text-primary hover:bg-primary hover:text-white">
           <a href="#registration" class="flex items-center gap-2">
