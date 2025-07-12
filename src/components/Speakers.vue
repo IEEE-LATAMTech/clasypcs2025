@@ -49,6 +49,28 @@ const speakersList: SpeakerProps[] = [
     //   },
     ],
   },
+  {
+    imageUrl: "/imagenesSpeakers/george.png",
+    name: "Dr. George J Proeller",
+    title: "Life member IEEE",
+    company: "Information Sistems Security Association",
+    talkTopic: "Distinguished Visitor Program(DVP) / Early Career Speaker Program (ECSP)",
+    bio: "Distinguished Cyber Security Consultant.",
+    socialNetworks: [
+      {
+        name: "LinkedIn",
+        url: "https://www.linkedin.com/in/george-j-proeller-9baba820/",
+      },
+    //   {
+    //     name: "X",
+    //     url: "https://x.com/carlos_ai",
+    //   },
+    //   {
+    //     name: "Email",
+    //     url: "mailto:carlos@techinnovation.com",
+    //   },
+    ],
+  },
 //   {
 //     imageUrl: "https://images.unsplash.com/photo-1494790108755-2616b612b93c?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3",
 //     name: "Prof. Maria Santos",
