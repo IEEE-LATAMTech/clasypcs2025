@@ -166,12 +166,12 @@ const teamList: TeamProps[] = [
       "/imagenesTeam/alejo.jpg",
     firstName: "Alejandro",
     lastName: "Escobar  Quinchia",
-    positions: ["Program Co-Chair", " "],
+    positions: ["Program Committe", " "],
     socialNetworks: [
-      {
-        name: "LinkedIn",
-        url: "https://www.linkedin.com/in/alejandro-escobar-quinch%C3%ADa/",
-      },
+      // {
+      //   name: "LinkedIn",
+      //   url: "https://www.linkedin.com/in/alejandro-escobar-quinch%C3%ADa/",
+      // },
       // {
       //   name: "Github",
       //   url: "https://github.com/DaBriNan",
@@ -228,8 +228,8 @@ const socialIcon = (socialName: string) => {
       </h2>
     </div>
 
-    <div
-      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8"
+    <div 
+    class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 justify-items-center"
     >
       <Card
         v-for="{
