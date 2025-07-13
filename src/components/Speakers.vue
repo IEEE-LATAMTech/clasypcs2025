@@ -71,6 +71,28 @@ const speakersList: SpeakerProps[] = [
     //   },
     ],
   },
+   {
+    imageUrl: "/imagenesSpeakers/donna.png",
+    name: "Mr. Donna Roper",
+    title: "Diversity and Inclusion IEEE",
+    company: "University of Panama",
+    talkTopic: "Diversity & Inclusion",
+    bio: "Master of Science in Information Systems.",
+    socialNetworks: [
+      {
+        name: "LinkedIn",
+        url: "https://www.linkedin.com/in/donna-roper-36092318/",
+      },
+    //   {
+    //     name: "X",
+    //     url: "https://x.com/carlos_ai",
+    //   },
+    //   {
+    //     name: "Email",
+    //     url: "mailto:carlos@techinnovation.com",
+    //   },
+    ],
+  },
 //   {
 //     imageUrl: "https://images.unsplash.com/photo-1494790108755-2616b612b93c?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3",
 //     name: "Prof. Maria Santos",
