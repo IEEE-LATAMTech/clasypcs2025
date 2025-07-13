@@ -32,7 +32,7 @@ import DistinguisedGuest from "./components/DistinguisedGuest.vue";
   <HowItWorks />
   <Pricing/>
   <Contact />
-  
+  <router-view />
   <Team />
   <FAQ />
   <Footer />

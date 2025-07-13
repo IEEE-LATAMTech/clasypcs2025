@@ -41,6 +41,20 @@ const guestsList: GuestProps[] = [
       },
     ],
   },
+  {
+    imageUrl: "/imagenesSpeakers/eric.png",
+    name: "Eric Berkowitz",
+    title: "Director of Membership IEEE Computer Society",
+    company: "",
+    specialty: "Senior Membership Marketing Leader. ",
+    bio: "",
+    socialNetworks: [
+      {
+        name: "LinkedIn",
+        url: "https://www.linkedin.com/in/ericberkowitz//",
+      },
+    ],
+  },
 ];
 
 const socialIcon = (socialName: string) => {
@@ -93,7 +107,7 @@ const getIconColor = (socialName: string) => {
     </div>
 
     <div
-      class="flex justify-center"
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
     >
       <Card
         v-for="{
