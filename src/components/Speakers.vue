@@ -73,7 +73,7 @@ const speakersList: SpeakerProps[] = [
   },
    {
     imageUrl: "/imagenesSpeakers/donna.png",
-    name: "Mr. Donna Roper",
+    name: "Ms. Donna Roper",
     title: "Diversity and Inclusion IEEE",
     company: "University of Panama",
     talkTopic: "Diversity & Inclusion",
@@ -82,6 +82,50 @@ const speakersList: SpeakerProps[] = [
       {
         name: "LinkedIn",
         url: "https://www.linkedin.com/in/donna-roper-36092318/",
+      },
+    //   {
+    //     name: "X",
+    //     url: "https://x.com/carlos_ai",
+    //   },
+    //   {
+    //     name: "Email",
+    //     url: "mailto:carlos@techinnovation.com",
+    //   },
+    ],
+  },
+   {
+    imageUrl: "",
+    name: "Dr. Yuhong Liu",
+    title: "TAB & TCs",
+    company: "IEEE Computer Society Geographic Activities Committee",
+    talkTopic: "Technical Activities (TAB)/Technical Communities (TCs)",
+    bio: "Dr of philosophy, Computer Engineering .",
+    socialNetworks: [
+      {
+        name: "LinkedIn",
+        url: "https://www.linkedin.com/in/yuhong-liu-02537b22/",
+      },
+    //   {
+    //     name: "X",
+    //     url: "https://x.com/carlos_ai",
+    //   },
+    //   {
+    //     name: "Email",
+    //     url: "mailto:carlos@techinnovation.com",
+    //   },
+    ],
+  },
+   {
+    imageUrl: "/imagenesSpeakers/andrew.png",
+    name: "Mr. Andrew Seely",
+    title: "Computer Society",
+    company: "Hillsborough Community Collage", 
+    talkTopic: "Getting to Know the IEEE Computer Society",
+    bio: "Experienced educator, leader, manager, engineer, and author, with 30 years of progressive accomplishment.",
+    socialNetworks: [
+      {
+        name: "LinkedIn",
+        url: "https://www.linkedin.com/in/andrewseelytampa/",
       },
     //   {
     //     name: "X",

@@ -3,7 +3,7 @@ import AboutUs from '@/views/AboutUs.vue'
 
 
 export  const routes =[
-    { path: '/about' , name:'AboutUs', component:AboutUs}
+    { path: '/aboutUs' , name:'AboutUs', component:AboutUs}
 ]
 
 const router = createRouter({

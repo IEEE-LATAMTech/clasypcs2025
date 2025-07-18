@@ -179,23 +179,23 @@ const teamList: TeamProps[] = [
       // },
     ],
   },
- {
-    imageUrl:
-      "/imagenesTeam/alejo.jpg",
-    firstName: "Alejandro",
-    lastName: "Escobar  Quinchia",
-    positions: ["Program Committe", " "],
-    socialNetworks: [
-      // {
-      //   name: "LinkedIn",
-      //   url: "https://www.linkedin.com/in/alejandro-escobar-quinch%C3%ADa/",
-      // },
-      // {
-      //   name: "Github",
-      //   url: "https://github.com/DaBriNan",
-      // },
-    ],
-  },
+//  {
+//     imageUrl:
+//       "/imagenesTeam/alejo.jpg",
+//     firstName: "Alejandro",
+//     lastName: "Escobar  Quinchia",
+//     positions: ["Program Committe", " "],
+//     socialNetworks: [
+//       // {
+//       //   name: "LinkedIn",
+//       //   url: "https://www.linkedin.com/in/alejandro-escobar-quinch%C3%ADa/",
+//       // },
+//       // {
+//       //   name: "Github",
+//       //   url: "https://github.com/DaBriNan",
+//       // },
+//     ],
+//   },
 ];
 
 const socialIcon = (socialName: string) => {

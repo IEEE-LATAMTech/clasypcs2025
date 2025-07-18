@@ -28,7 +28,7 @@ const FAQList: FAQProps[] = [
   },
   {
     question: "How can I register?",
-    answer: "You can sign up through our website by clicking [Register Now]. Make sure to register early — spots are limited and may fill up quickly.",
+    answer: "In the section registrer.",
     value: "item-4",
   },
   {

@@ -11,29 +11,35 @@ import Community from "./components/Community.vue";
 import Contact from "./components/Contact.vue";
 import FAQ from "./components/FAQ.vue";
 import Footer from "./components/Footer.vue";
-
 import Speakers from "./components/Speakers.vue";
-
 import Pricing from "./components/Pricing.vue";
 import DistinguisedGuest from "./components/DistinguisedGuest.vue";
+//import AboutUs from "./views/AboutUs.vue";
 
 </script>
 
 <template>
   <Navbar />
-  <Hero />
-  <Benefits />
-  <DistinguisedGuest/>
-  <Speakers />
-  <Sponsors />
-  <Features />
-  <Community />
-  <Services />
-  <HowItWorks />
-  <Pricing/>
-  <Contact />
+  
+  <!-- Aquí es donde se renderizarán las vistas según la ruta -->
   <router-view />
-  <Team />
-  <FAQ />
+  
+  <!-- Estos componentes solo se mostrarán en la ruta principal "/" -->
+  <template v-if="$route.path === '/'">
+    <Hero />
+    <Benefits />
+    <DistinguisedGuest/>
+    <Speakers />
+    <Sponsors />
+    <Features />
+    <Community />
+    <Services />
+    <HowItWorks />
+    <Pricing/>
+    <Contact />
+    <Team />
+    <FAQ />
+  </template>
+  
   <Footer />
-</template>
+  </template>
