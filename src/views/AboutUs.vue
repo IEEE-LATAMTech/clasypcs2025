@@ -101,7 +101,7 @@ const carousel3Sponsors: SponsorProps[] = [
   >
   <br>
   <br>
-    <h2 class="text-lg md:text-xl text-center mb-12">Our Sponsors</h2>
+    <h2 class="text-lg md:text-xl text-center mb-12">Past Editions</h2>
 
     <div class="space-y-8">
       <!-- Carrusel 1 - Dirección derecha -->

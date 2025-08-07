@@ -42,16 +42,16 @@ const guestsList: GuestProps[] = [
     ],
   },
   {
-    imageUrl: "/imagenesSpeakers/eric.png",
-    name: "Eric Berkowitz",
-    title: "Director of Membership IEEE Computer Society",
+    imageUrl: "/imagenesSpeakers/andrew.png",
+    name: "Andrew Seely",
+    title: "Information Technology and Cybersecurity Consultant",
     company: "",
-    specialty: "Senior Membership Marketing Leader. ",
+    specialty: "Experienced educator, leader, manager, engineer, and author, with 30 years of progressive accomplishment. ",
     bio: "",
     socialNetworks: [
       {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/ericberkowitz//",
+        url: "https://www.linkedin.com/in/andrewseelytampa/",
       },
     ],
   },

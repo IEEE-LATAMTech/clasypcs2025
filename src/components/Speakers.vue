@@ -115,28 +115,28 @@ const speakersList: SpeakerProps[] = [
     //   },
     ],
   },
-   {
-    imageUrl: "/imagenesSpeakers/andrew.png",
-    name: "Mr. Andrew Seely",
-    title: "Computer Society",
-    company: "Hillsborough Community Collage", 
-    talkTopic: "Getting to Know the IEEE Computer Society",
-    bio: "Experienced educator, leader, manager, engineer, and author, with 30 years of progressive accomplishment.",
-    socialNetworks: [
-      {
-        name: "LinkedIn",
-        url: "https://www.linkedin.com/in/andrewseelytampa/",
-      },
-    //   {
-    //     name: "X",
-    //     url: "https://x.com/carlos_ai",
-    //   },
-    //   {
-    //     name: "Email",
-    //     url: "mailto:carlos@techinnovation.com",
-    //   },
-    ],
-  },
+  //  {
+  //   imageUrl: "/imagenesSpeakers/andrew.png",
+  //   name: "Mr. Andrew Seely",
+  //   title: "Computer Society",
+  //   company: "Hillsborough Community Collage", 
+  //   talkTopic: "Getting to Know the IEEE Computer Society",
+  //   bio: "Experienced educator, leader, manager, engineer, and author, with 30 years of progressive accomplishment.",
+  //   socialNetworks: [
+  //     {
+  //       name: "LinkedIn",
+  //       url: "https://www.linkedin.com/in/andrewseelytampa/",
+  //     },
+  //   //   {
+  //   //     name: "X",
+  //   //     url: "https://x.com/carlos_ai",
+  //   //   },
+  //   //   {
+  //   //     name: "Email",
+  //   //     url: "mailto:carlos@techinnovation.com",
+  //   //   },
+  //   ],
+  // },
 //   {
 //     imageUrl: "https://images.unsplash.com/photo-1494790108755-2616b612b93c?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3",
 //     name: "Prof. Maria Santos",
