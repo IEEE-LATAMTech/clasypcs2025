@@ -74,9 +74,9 @@ const speakersList: SpeakerProps[] = [
    {
     imageUrl: "/imagenesSpeakers/donna.png",
     name: "Ms. Donna Roper",
-    title: "Diversity and Inclusion IEEE",
+    title: "Broadening Participation",
     company: "University of Panama",
-    talkTopic: "Diversity & Inclusion",
+    talkTopic: "Broadening Participation",
     bio: "Master of Science in Information Systems.",
     socialNetworks: [
       {

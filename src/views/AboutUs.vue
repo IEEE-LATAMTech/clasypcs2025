@@ -21,7 +21,7 @@ const carousel1Sponsors: SponsorProps[] = [
     alt: "Innovation Labs Logo"
   },
   {
-    image: "/imaEven/event3jpg",
+    image: "/imaEven/event3.jpg",
     name: "Digital Solutions",
     alt: "Digital Solutions Logo"
   },
