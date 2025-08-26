@@ -55,20 +55,20 @@ const guestsList: GuestProps[] = [
       },
     ],
   },
-  // {
-  //   imageUrl: "/imagenesSpeakers/donna.png",
-  //   name: "Donna Roper",
-  //   title: "Diversity and Inclusion IEEE",
-  //   company: "",
-  //   specialty: "Master of Science in Information Systems. ",
-  //   bio: "",
-  //   socialNetworks: [
-  //     {
-  //       name: "LinkedIn",
-  //       url: "https://www.linkedin.com/in/donna-roper-36092318/",
-  //     },
-  //   ],
-  // },
+  {
+    imageUrl: "/imagenesSpeakers/eric.png",
+    name: "Eric Berkowitz",
+    title: "Senior Membership Marketing Leader",
+    company: "",
+    specialty: "Strategy, Tactics, Execution, CX and Community Building ",
+    bio: "",
+    socialNetworks: [
+      {
+        name: "LinkedIn",
+        url: "https://www.linkedin.com/in/ericberkowitz/",
+      },
+    ],
+  },
 ];
 
 const socialIcon = (socialName: string) => {
