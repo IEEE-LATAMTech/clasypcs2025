@@ -44,9 +44,9 @@ const guestsList: GuestProps[] = [
   {
     imageUrl: "/imagenesSpeakers/andrew.png",
     name: "Andrew Seely",
-    title: "Information Technology and Cybersecurity Consultant",
+    title: "Computer Society Vice President of Membership and Geographic Activities",
     company: "",
-    specialty: "Experienced educator, leader, manager, engineer, and author, with 30 years of progressive accomplishment. ",
+    specialty: "Computer Science Faculty at Hillsborough College ",
     bio: "",
     socialNetworks: [
       {
