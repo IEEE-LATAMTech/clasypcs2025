@@ -99,6 +99,8 @@ const registrationForm = reactive<RegistrationFormProps>({
 const invalidInputForm = ref<boolean>(false);
 const isSubmitting = ref<boolean>(false);
 const submitSuccess = ref<boolean>(false);
+const applicationsOpen = ref<boolean>(false);
+const applicationDeadline = "September 10,2025";
 
 // EmailJS Configuration - Replace with your actual values
 const EMAILJS_SERVICE_ID = 'service_e9x87vp';
@@ -106,6 +108,11 @@ const EMAILJS_TEMPLATE_ID = 'template_m25v52h';
 const EMAILJS_PUBLIC_KEY = '7PgYcd9fDVBNItAkJ';
 
 const handleSubmit = async () => {
+  // Prevenir envío si las aplicaciones están cerradas
+  if (!applicationsOpen.value) {
+    return;
+  }
+
   invalidInputForm.value = false;
   isSubmitting.value = true;
 
@@ -585,8 +592,18 @@ const countryCodes = [
             </div>
           </div>
 
+          <!-- Mensaje de aplicaciones cerradas -->
+          <Alert v-if="!applicationsOpen" class="border-red-200 bg-red-50 text-red-800 dark:border-red-800 dark:bg-red-950 dark:text-red-200">
+            <AlertCircle class="w-4 h-4" />
+            <AlertTitle>Applications Closed</AlertTitle>
+            <AlertDescription>
+              The application period for CLASYPCS 2025 scholarships has ended. The deadline was {{ applicationDeadline }}.
+              Thank you for your interest!
+            </AlertDescription>
+          </Alert>
+
           <!-- Success Alert -->
-          <Alert v-if="submitSuccess" class="border-green-200 bg-green-50 text-green-800 dark:border-green-800 dark:bg-green-950 dark:text-green-200">
+          <Alert v-else-if="submitSuccess" class="border-green-200 bg-green-50 text-green-800 dark:border-green-800 dark:bg-green-950 dark:text-green-200">
             <AlertCircle class="w-4 h-4" />
             <AlertTitle>Success!</AlertTitle>
             <AlertDescription>
@@ -595,7 +612,7 @@ const countryCodes = [
           </Alert>
 
           <!-- Error Alert -->
-          <Alert v-if="invalidInputForm" variant="destructive">
+          <Alert v-else-if="invalidInputForm" variant="destructive">
             <AlertCircle class="w-4 h-4" />
             <AlertTitle>Error</AlertTitle>
             <AlertDescription>
@@ -608,9 +625,12 @@ const countryCodes = [
             <Button 
               type="submit" 
               class="w-full md:w-auto px-12 py-3 text-lg font-semibold"
-              :disabled="isSubmitting"
+              :disabled="!applicationsOpen || isSubmitting"
+              :class="{ 'opacity-50 cursor-not-allowed': !applicationsOpen || isSubmitting }"
             >
-              {{ isSubmitting ? 'Submitting...' : 'Submit Application' }}
+              <span v-if="!applicationsOpen">Applications Closed</span>
+              <span v-else-if="isSubmitting">Submitting...</span>
+              <span v-else>Submit Application</span>
             </Button>
           </div>
         </form>
