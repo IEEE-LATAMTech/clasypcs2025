@@ -38,15 +38,15 @@ interface RouteProps {
 
 // Rutas para la página principal
 const homeRoutes: RouteProps[] = [
-   {
-    href: "#registration",
-    label: "Apply for a scholarship"
-  },
-  {
-    href: "/aboutUs",
-    label: "Past events",
-    isRouterLink: true
-  },
+  //  {
+  //   href: "#registration",
+  //   label: "Apply for a scholarship"
+  // },
+  // {
+  //   href: "/aboutUs",
+  //   label: "Past events",
+  //   isRouterLink: true
+  // },
   {
     href: "#pricing",
     label: "Pricing",
