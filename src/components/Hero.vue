@@ -94,7 +94,7 @@ import { Badge } from "@/components/ui/badge";
     transform: translateY(0px);
   }
 }
-@keyframes img-border-animation {
+/* @keyframes img-border-animation {
   from {
     @apply border-t-primary/10;
   }
@@ -102,5 +102,5 @@ import { Badge } from "@/components/ui/badge";
   to {
     @apply border-t-primary/60;
   }
-}
+} */
 </style>

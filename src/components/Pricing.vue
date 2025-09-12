@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { Card, CardContent } from "@/components/ui/card";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { AlertCircle, Mail, CalendarX } from "lucide-vue-next";
+import { AlertCircle, CalendarX } from "lucide-vue-next";
 
 const registrationDeadline = "September 10, 2025";
 </script>
