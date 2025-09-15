@@ -93,28 +93,20 @@ const speakersList: SpeakerProps[] = [
     //   },
     ],
   },
-  //  {
-  //   imageUrl: "",
-  //   name: "Dr. Yuhong Liu",
-  //   title: "TAB & TCs",
-  //   company: "IEEE Computer Society Geographic Activities Committee",
-  //   talkTopic: "Technical Activities (TAB)/Technical Communities (TCs)",
-  //   bio: "Dr of philosophy, Computer Engineering .",
-  //   socialNetworks: [
-  //     {
-  //       name: "LinkedIn",
-  //       url: "https://www.linkedin.com/in/yuhong-liu-02537b22/",
-  //     },
-    //   {
-    //     name: "X",
-    //     url: "https://x.com/carlos_ai",
-    //   },
-    //   {
-    //     name: "Email",
-    //     url: "mailto:carlos@techinnovation.com",
-    //   },
-  //   ],
-  // },
+   {
+    imageUrl: "",
+    name: "Silvia Ceballos",
+    title: "Director CS TC Activities and Operations",
+    company: "IEEE Computer Society Conference Committee",
+    talkTopic: "Technical Communities",
+    bio: "Conference Business Operations Manager .",
+    socialNetworks: [
+      {
+        name: "LinkedIn",
+        url: "https://www.linkedin.com/in/sceballos/",
+      }
+    ],
+  },
   //  {
   //   imageUrl: "/imagenesSpeakers/andrew.png",
   //   name: "Mr. Andrew Seely",
